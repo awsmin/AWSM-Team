@@ -1,0 +1,270 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-08-17 15:25+0530\n"
+"PO-Revision-Date: 2016-07-27 00:14+0530\n"
+"Last-Translator: \n"
+"Language-Team: AWSM innovations <hello@awsm.in>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+
+#: awsm-team.php:68
+msgid "featured image"
+msgstr ""
+
+#: awsm-team.php:68
+msgid "logo"
+msgstr ""
+
+#: awsm-team.php:78 awsm-team.php:79 awsm-team.php:241
+msgid "Awsm Team"
+msgstr ""
+
+#: awsm-team.php:83 includes/member-details.php:15
+msgid "Content"
+msgstr ""
+
+#: awsm-team.php:89
+msgid "Select Team"
+msgstr ""
+
+#: awsm-team.php:155
+msgid "Team not found"
+msgstr ""
+
+#: awsm-team.php:158
+msgid "No members found"
+msgstr ""
+
+#: awsm-team.php:196
+msgid "Team Member"
+msgstr ""
+
+#: awsm-team.php:197
+msgid "Team Members"
+msgstr ""
+
+#: awsm-team.php:202
+msgid "AWSM Team"
+msgstr ""
+
+#: awsm-team.php:203
+msgid "Add New Member"
+msgstr ""
+
+#: awsm-team.php:204 awsm-team.php:243
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: awsm-team.php:205 awsm-team.php:244
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: awsm-team.php:206 awsm-team.php:245
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: awsm-team.php:207 awsm-team.php:246
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: awsm-team.php:208 awsm-team.php:328 includes/team-details.php:7
+msgid "Members"
+msgstr ""
+
+#: awsm-team.php:209 awsm-team.php:248
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: awsm-team.php:210 awsm-team.php:249
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: awsm-team.php:211 awsm-team.php:250
+#, php-format
+msgid "No %s found in trash"
+msgstr ""
+
+#: awsm-team.php:216 awsm-team.php:255
+#, php-format
+msgid "This is where you can create and manage %s."
+msgstr ""
+
+#: awsm-team.php:235
+msgid "Team"
+msgstr ""
+
+#: awsm-team.php:236 awsm-team.php:247
+msgid "Teams"
+msgstr ""
+
+#: awsm-team.php:242 awsm-team.php:389
+msgid "Add Team"
+msgstr ""
+
+#: awsm-team.php:298
+msgid "Please upload square-cropped photos with a minimum dimension of 500px"
+msgstr ""
+
+#: awsm-team.php:306 awsm-team.php:327 templates/table.php:9
+msgid "Name"
+msgstr ""
+
+#: awsm-team.php:307
+msgid "Photo"
+msgstr ""
+
+#: awsm-team.php:308 includes/member-details.php:2
+msgid "Designation"
+msgstr ""
+
+#: awsm-team.php:329
+msgid "Preset"
+msgstr ""
+
+#: awsm-team.php:330 includes/team-details.php:90
+msgid "Style"
+msgstr ""
+
+#: awsm-team.php:331 awsm-team.php:359
+msgid "Shortcode"
+msgstr ""
+
+#: awsm-team.php:359
+msgid "Copy"
+msgstr ""
+
+#: awsm-team.php:397
+msgid "Member Details"
+msgstr ""
+
+#: awsm-team.php:398
+msgid "Team Details"
+msgstr ""
+
+#: includes/member-details.php:6
+msgid "Short Description (In 140 characters or less)"
+msgstr ""
+
+#: includes/member-details.php:9
+msgid "Additional Information (for Email, Telephone, Fax, etc)"
+msgstr ""
+
+#: includes/member-details.php:14
+msgid "Label"
+msgstr ""
+
+#: includes/member-details.php:24 includes/member-details.php:31
+#: includes/member-details.php:38
+msgid "ex: Email"
+msgstr ""
+
+#: includes/member-details.php:25 includes/member-details.php:32
+#: includes/member-details.php:39
+msgid "mail@example.com"
+msgstr ""
+
+#: includes/member-details.php:26 includes/member-details.php:33
+#: includes/member-details.php:40 includes/member-details.php:65
+#: includes/member-details.php:74 includes/member-details.php:83
+msgid "Remove"
+msgstr ""
+
+#: includes/member-details.php:44 includes/member-details.php:87
+msgid "Add row"
+msgstr ""
+
+#: includes/member-details.php:46
+msgid "Links (Twitter, LinkedIn, etc)"
+msgstr ""
+
+#: includes/member-details.php:51
+msgid "Icon"
+msgstr ""
+
+#: includes/member-details.php:52
+msgid "Link"
+msgstr ""
+
+#: includes/member-details.php:62 includes/member-details.php:71
+#: includes/member-details.php:80
+msgid "Select icon"
+msgstr ""
+
+#: includes/member-details.php:64 includes/member-details.php:73
+#: includes/member-details.php:82
+msgid "ex: http://www.twitter.com/awsmin"
+msgstr ""
+
+#: includes/team-details.php:8
+msgid "Select members from the dropdown, drag and drop them to reorder."
+msgstr ""
+
+#: includes/team-details.php:15
+msgid "Select a member"
+msgstr ""
+
+#: includes/team-details.php:27
+msgid "You haven’t added any team members yet. "
+msgstr ""
+
+#: includes/team-details.php:28
+msgid "Add a team member"
+msgstr ""
+
+#: includes/team-details.php:65
+msgid "Presets"
+msgstr ""
+
+#: includes/team-details.php:66
+msgid "Choose a preset from below."
+msgstr ""
+
+#: includes/team-details.php:93
+#, php-format
+msgid "We have a set of predefined styles for each preset. Choose your favorite. Refer <a href=\"%s\" target=\"_blank\">demo</a>."
+msgstr ""
+
+#: includes/team-details.php:113
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/team-details.php:114
+msgid "Want to add your own colours and flavours? Add your custom CSS in the text box below."
+msgstr ""
+
+#: includes/team-details.php:130
+msgid "Added"
+msgstr ""
+
+#: templates/table.php:6
+msgid "Image"
+msgstr ""
+
+#: templates/table.php:12
+msgid "Designaion"
+msgstr ""
+
+#: templates/table.php:15
+msgid "Short Description"
+msgstr ""
+
+#: templates/table.php:18
+msgid "Social Links"
+msgstr ""
