@@ -20,13 +20,6 @@ The lite version comes with 3 presets and a number of style options. You can cre
 = Video Demo (on Pro version) =
 [youtube https://www.youtube.com/watch?v=edyIlBUkuXI]
 
-= [View Demo of Pro Version](http://dev.awsm.in/team/wp-demo/) = 
-
-The lite version comes with 3 presets and a number of style options. You can create a great looking team section on your WordPress site in a few minutes after installing the plugin.
-
-= Video Demo (on Pro version) =
-[youtube https://www.youtube.com/watch?v=edyIlBUkuXI]
-
 = Key Features =
 
 * Unique presets
@@ -41,7 +34,6 @@ The lite version comes with 3 presets and a number of style options. You can cre
 * Card Layout - with 4 style options
 * Table - with 3 style options
 * List - with 2 style options
-
 
 == Installation ==
 1. Upload the plugin files to the `/wp-content/plugins/awsm-team` directory, or install the plugin through the WordPress plugins screen directly.
