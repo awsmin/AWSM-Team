@@ -13,6 +13,13 @@ The most versatile WordPress plugin available to create and manage a team showca
 == Description ==
 AWSM Team is the most versatile and lite-weight WordPress plugin available to create and manage a team showcase.  
 
+The lite version comes with 3 presets and a number of style options. You can create a great looking team section on your WordPress site in a few minutes after installing the plugin.
+
+[View Demo of Pro Version](http://dev.awsm.in/team/wp-demo/)
+
+= Video Demo (on Pro version) =
+[youtube https://www.youtube.com/watch?v=edyIlBUkuXI]
+
 = [View Demo of Pro Version](http://dev.awsm.in/team/wp-demo/) = 
 
 The lite version comes with 3 presets and a number of style options. You can create a great looking team section on your WordPress site in a few minutes after installing the plugin.
