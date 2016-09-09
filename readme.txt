@@ -3,6 +3,7 @@ Contributors: awsmin
 Tags: team, team page, team members, team builder, team shortcode, team layout, team plugin, members, users
 Requires at least: 4.0
 Tested up to: 4.6
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +15,8 @@ The most versatile WordPress plugin available to create and manage a team showca
 AWSM Team is the most versatile and lite-weight WordPress plugin available to create and manage a team showcase.  
 
 The lite version comes with 3 presets and a number of style options. You can create a great looking team section on your WordPress site in a few minutes after installing the plugin.
+
+[View Demo](http://dev.awsm.in/team/wp-lite-demo/)
 
 [View Demo of Pro Version](http://dev.awsm.in/team/wp-demo/)
 
@@ -39,3 +42,11 @@ The lite version comes with 3 presets and a number of style options. You can cre
 1. Upload the plugin files to the `/wp-content/plugins/awsm-team` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the `Plugins` screen in WordPress
 
+== Screenshots ==
+
+1. Adding a Member
+2. Adding a Team
+3. One of the style of card layout
+4. Card Layout with flip style 
+5. List layout
+6. Table Layout
