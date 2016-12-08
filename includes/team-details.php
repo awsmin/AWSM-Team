@@ -44,6 +44,7 @@
        						'orderby' => 'post__in', 
           					'post_type' => 'awsm_team_member',
           					'post__in' => $options['memberlist'],
+          					'posts_per_page' => -1
       						);
 							$team = new WP_Query($teamargs);
 							if($team->have_posts()):

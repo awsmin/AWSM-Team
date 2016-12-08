@@ -2,7 +2,7 @@
 Contributors: awsmin
 Tags: team, team page, team members, team builder, team shortcode, team layout, team plugin, members, users
 Requires at least: 4.0
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,3 +50,15 @@ The lite version comes with 3 presets and a number of style options. You can cre
 4. Card Layout with flip style 
 5. List layout
 6. Table Layout
+
+== Changelog ==
+
+= V 1.0.1 - 2016-12-08 =
+
+* Post per page fix
+
+== Upgrade Notice ==
+
+= V 1.0.1 - 2016-12-08 =
+
+* Post per page fix
