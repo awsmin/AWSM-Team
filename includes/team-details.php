@@ -4,15 +4,15 @@
 			<div class="awsm-team-customize-inner">
 				<div class="awsm-team-customize-member">
 					<div class="awsm-heading-group">
-						<h2 class="sub-h"><?php _e('Members', $this->text_domain);?></h2>
-						<span><?php _e('Select members from the dropdown, drag and drop them to reorder.', $this->text_domain);?></span>
+						<h2 class="sub-h"><?php _e('Members', 'awsm-team');?></h2>
+						<span><?php _e('Select members from the dropdown, drag and drop them to reorder.', 'awsm-team');?></span>
 					</div>
 					<div class="awsm-select-members">
 						<?php 
 						if($members->have_posts()): ?>
 						<select name="members" id="awsm-members">			
 							<?php 
-							echo '<option value="" data-img="'.$defaultimage.'">'._e('Select a member',$this->text_domain).'</option>';
+							echo '<option value="" data-img="'.$defaultimage.'">'._e('Select a member','awsm-team').'</option>';
 							while($members->have_posts()):  $members->the_post();
 								$disabled ="";
 								if(in_array($members->post->ID, $options['memberlist']) ) $disabled ="disabled";
@@ -24,8 +24,8 @@
 						<?php else: 
 						$addmember = admin_url('post-new.php?post_type=awsm_team_member');
 						echo '<p>';
-						_e('You haven’t added any team members yet. ',$this->text_domain); 
-						echo '<a href="'.$addmember.'">'.__("Add a team member",$this->text_domain).'</a>';
+						_e('You haven’t added any team members yet. ','awsm-team'); 
+						echo '<a href="'.$addmember.'">'.__("Add a team member",'awsm-team').'</a>';
 						echo '</p>';
 						endif;?>
 					</div><!-- .awsm-select-members -->
@@ -63,8 +63,8 @@
 				</div><!-- .awsm-team-customize-member -->
 				<div class="awsm-team-customize-style">
 					<div class="awsm-heading-group">
-						<h2 class="sub-h"><?php echo __('Presets', $this->text_domain);?></h2>
-						<span><?php echo __('Choose a preset from below.', $this->text_domain);?></span>
+						<h2 class="sub-h"><?php echo __('Presets', 'awsm-team');?></h2>
+						<span><?php echo __('Choose a preset from below.', 'awsm-team');?></span>
 					</div>
 					<div class="awsm-preset-list awsm-clearfix">
 								<?php
@@ -88,10 +88,10 @@
 					</div><!-- .awsm-preset-list -->
 					<div class="awsm-section awsm-clearfix">
 							<div class="awsm-heading-group">
-								<h2 class="sub-h"><?php echo __('Style', $this->text_domain);?></h2>
+								<h2 class="sub-h"><?php echo __('Style', 'awsm-team');?></h2>
 								<span><?php
 									$url = 'http://dev.awsm.in/team/wp-demo/';
-									printf( wp_kses( __( 'We have a set of predefined styles for each preset. Choose your favorite. Refer <a href="%s" target="_blank">demo</a>.',$this->text_domain), array(  'a' => array( 'href' => array(),'target'=>array() ) ) ), esc_url( $url ) );
+									printf( wp_kses( __( 'We have a set of predefined styles for each preset. Choose your favorite. Refer <a href="%s" target="_blank">demo</a>.','awsm-team'), array(  'a' => array( 'href' => array(),'target'=>array() ) ) ), esc_url( $url ) );
 									?></span>
 							</div><!-- .awsm-heading-group -->
 							<div class="awsm-row">
@@ -111,8 +111,8 @@
 					</div><!-- .awsm-row -->
 					<div class="awsm-custom-css-wrap">
 						<div class="awsm-heading-group">
-							<h2 class="sub-h"><?php echo __('Custom CSS', $this->text_domain);?></h2>
-							<span><?php echo __('Want to add your own colours and flavours? Add your custom CSS in the text box below.', $this->text_domain);?></span>
+							<h2 class="sub-h"><?php echo __('Custom CSS', 'awsm-team');?></h2>
+							<span><?php echo __('Want to add your own colours and flavours? Add your custom CSS in the text box below.', 'awsm-team');?></span>
 						</div><!-- .awsm-heading-group -->
 						<textarea name="custom_css"><?php echo $options['custom_css'];?></textarea>
 					</div>
@@ -128,7 +128,7 @@
     	<# } #>
     	<p class="select2-result-repository__title">{{{data.title}}}</p>
     	<# if ( data.disabled ) { #>
-    	<span class="select2-result-repository__disabled"><?php _e('Added',$this->text_domain);?></span>
+    	<span class="select2-result-repository__disabled"><?php _e('Added','awsm-team');?></span>
     	<# } #>
    </div>
 </script>

@@ -53,12 +53,14 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Changelog ==
 
-= V 1.0.1 - 2016-12-08 =
+= V 1.1 - 2017-11-07 =
 
-* Post per page fix
+* Fixed: Members limit issue
+* Fixed: Language localization issue
 
 == Upgrade Notice ==
 
-= V 1.0.1 - 2016-12-08 =
+= V 1.1 - 2017-11-07 =
 
-* Post per page fix
+* Fixed: Members limit issue
+* Fixed: Language localization issue

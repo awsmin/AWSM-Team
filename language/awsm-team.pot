@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-09-09 12:06+0530\n"
+"POT-Creation-Date: 2017-07-11 15:37+0530\n"
 "PO-Revision-Date: 2016-07-27 00:14+0530\n"
 "Last-Translator: \n"
 "Language-Team: AWSM innovations <hello@awsm.in>\n"
@@ -18,135 +18,135 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: js\n"
 
-#: awsm-team.php:135
+#: awsm-team.php:132
 msgid "Team not found"
 msgstr ""
 
-#: awsm-team.php:138
+#: awsm-team.php:135
 msgid "No members found"
 msgstr ""
 
-#: awsm-team.php:175
+#: awsm-team.php:173
 msgid "Team Member"
 msgstr ""
 
-#: awsm-team.php:176
+#: awsm-team.php:174
 msgid "Team Members"
 msgstr ""
 
-#: awsm-team.php:180
+#: awsm-team.php:178
 msgid "AWSM Team"
 msgstr ""
 
-#: awsm-team.php:181
+#: awsm-team.php:179
 msgid "Add New Member"
 msgstr ""
 
-#: awsm-team.php:182 awsm-team.php:216
+#: awsm-team.php:180 awsm-team.php:214
 #, php-format
 msgid "Add %s"
 msgstr ""
 
-#: awsm-team.php:183 awsm-team.php:217
+#: awsm-team.php:181 awsm-team.php:215
 #, php-format
 msgid "New %s"
 msgstr ""
 
-#: awsm-team.php:184 awsm-team.php:218
+#: awsm-team.php:182 awsm-team.php:216
 #, php-format
 msgid "Edit %s"
 msgstr ""
 
-#: awsm-team.php:185 awsm-team.php:219
+#: awsm-team.php:183 awsm-team.php:217
 #, php-format
 msgid "View %s"
 msgstr ""
 
-#: awsm-team.php:186 awsm-team.php:318 includes/team-details.php:7
+#: awsm-team.php:184 awsm-team.php:316 includes/team-details.php:7
 msgid "Members"
 msgstr ""
 
-#: awsm-team.php:187 awsm-team.php:221
+#: awsm-team.php:185 awsm-team.php:219
 #, php-format
 msgid "Search %s"
 msgstr ""
 
-#: awsm-team.php:188 awsm-team.php:222
+#: awsm-team.php:186 awsm-team.php:220
 #, php-format
 msgid "No %s found"
 msgstr ""
 
-#: awsm-team.php:189 awsm-team.php:223
+#: awsm-team.php:187 awsm-team.php:221
 #, php-format
 msgid "No %s found in trash"
 msgstr ""
 
-#: awsm-team.php:193 awsm-team.php:227
+#: awsm-team.php:191 awsm-team.php:225
 #, php-format
 msgid "This is where you can create and manage %s."
 msgstr ""
 
-#: awsm-team.php:209
+#: awsm-team.php:207
 msgid "Team"
 msgstr ""
 
-#: awsm-team.php:210 awsm-team.php:220
+#: awsm-team.php:208 awsm-team.php:218
 msgid "Teams"
 msgstr ""
 
-#: awsm-team.php:214
+#: awsm-team.php:212
 msgid "Awsm Team"
 msgstr ""
 
-#: awsm-team.php:215 awsm-team.php:384
+#: awsm-team.php:213 awsm-team.php:382
 msgid "Add Team"
 msgstr ""
 
-#: awsm-team.php:276
+#: awsm-team.php:274
 msgid "Please upload square-cropped photos with a minimum dimension of 500px"
 msgstr ""
 
-#: awsm-team.php:288 awsm-team.php:317 templates/table.php:9
+#: awsm-team.php:286 awsm-team.php:315 templates/table.php:9
 msgid "Name"
 msgstr ""
 
-#: awsm-team.php:289
+#: awsm-team.php:287
 msgid "Photo"
 msgstr ""
 
-#: awsm-team.php:290 includes/member-details.php:3
+#: awsm-team.php:288 includes/member-details.php:3 templates/table.php:12
 msgid "Designation"
 msgstr ""
 
-#: awsm-team.php:319
+#: awsm-team.php:317
 msgid "Preset"
 msgstr ""
 
-#: awsm-team.php:320 includes/team-details.php:90
+#: awsm-team.php:318 includes/team-details.php:91
 msgid "Style"
 msgstr ""
 
-#: awsm-team.php:321 awsm-team.php:354
+#: awsm-team.php:319 awsm-team.php:352
 msgid "Shortcode"
 msgstr ""
 
-#: awsm-team.php:354
+#: awsm-team.php:352
 msgid "Copy"
 msgstr ""
 
-#: awsm-team.php:392
+#: awsm-team.php:390
 msgid "Member Details"
 msgstr ""
 
-#: awsm-team.php:393
+#: awsm-team.php:391
 msgid "Team Details"
 msgstr ""
 
-#: awsm-team.php:394
+#: awsm-team.php:392
 msgid "Upgrade to AWSM Team Pro"
 msgstr ""
 
-#: awsm-team.php:660
+#: awsm-team.php:658
 msgid "Thanks for upgrading AWSM Team Pro! The free version ‘AWSM Team’ has now been deactivated."
 msgstr ""
 
@@ -209,7 +209,7 @@ msgid "ex: http://www.twitter.com/awsmin"
 msgstr ""
 
 #: includes/pro-features.php:13
-msgid "Upgrade Now ($15)"
+msgid "Upgrade Now"
 msgstr ""
 
 #: includes/pro-features.php:14
@@ -232,37 +232,33 @@ msgstr ""
 msgid "Add a team member"
 msgstr ""
 
-#: includes/team-details.php:65
+#: includes/team-details.php:66
 msgid "Presets"
 msgstr ""
 
-#: includes/team-details.php:66
+#: includes/team-details.php:67
 msgid "Choose a preset from below."
 msgstr ""
 
-#: includes/team-details.php:93
+#: includes/team-details.php:94
 #, php-format
 msgid "We have a set of predefined styles for each preset. Choose your favorite. Refer <a href=\"%s\" target=\"_blank\">demo</a>."
 msgstr ""
 
-#: includes/team-details.php:113
+#: includes/team-details.php:114
 msgid "Custom CSS"
 msgstr ""
 
-#: includes/team-details.php:114
+#: includes/team-details.php:115
 msgid "Want to add your own colours and flavours? Add your custom CSS in the text box below."
 msgstr ""
 
-#: includes/team-details.php:130
+#: includes/team-details.php:131
 msgid "Added"
 msgstr ""
 
 #: templates/table.php:6
 msgid "Image"
-msgstr ""
-
-#: templates/table.php:12
-msgid "Designaion"
 msgstr ""
 
 #: templates/table.php:15

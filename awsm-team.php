@@ -3,7 +3,7 @@
 Plugin Name: AWSM Team
 Plugin URI: http://awsm.in/team-pro-documentation
 Description: The most versatile plugin to create and manage your Team page. Packed with 8 unique presets and number of styles to choose from.
-Version: 1.0.1
+Version: 1.1
 Author: AWSM Innovations
 Author URI: http://awsm.in/
 License: GPL
@@ -23,7 +23,6 @@ if (!class_exists('Awsm_team_lite')):
     class Awsm_team_lite
     {
         private static $instance = null;
-        private $text_domain = 'awsm-team';
         private $settings;
         
         /**
@@ -46,8 +45,7 @@ if (!class_exists('Awsm_team_lite')):
                 'plugin_url' => plugin_dir_url(__FILE__),
                 'plugin_base' => dirname(plugin_basename(__FILE__)),
                 'plugin_file' => __FILE__,
-                'plugin_version' => '1.0.1',
-                'text_domain' => 'awsm-team-pro'
+                'plugin_version' => '1.1',
             );
             $this->load_plugin_textdomain();
             $this->run_plugin();
@@ -59,8 +57,7 @@ if (!class_exists('Awsm_team_lite')):
          */
         public function load_plugin_textdomain()
         {
-            load_textdomain($this->text_domain, WP_LANG_DIR . "/awsm-team/awsm-team-" . apply_filters('plugin_locale', get_locale(), 'awsm-team-pro') . ".mo");
-            load_plugin_textdomain($this->text_domain, false, $this->settings['plugin_base'] . '/language');
+            load_plugin_textdomain( 'awsm-team',FALSE, $this->settings['plugin_base'] . '/language/' );
         }
         /**
          * Main plugin function
@@ -132,10 +129,10 @@ if (!class_exists('Awsm_team_lite')):
             ), $atts));
             $options = $this->get_options('awsm_team', $id);
             if (!$options) {
-                return '<div class="awsm-team-error">' . __('Team not found', $this->text_domain) . '</div>';
+                return '<div class="awsm-team-error">' . __('Team not found', 'awsm-team') . '</div>';
             }
             if (empty($options['memberlist'])) {
-                return '<div class="awsm-team-error">' . __('No members found', $this->text_domain) . '</div>';
+                return '<div class="awsm-team-error">' . __('No members found', 'awsm-team') . '</div>';
             }
             $template = $this->settings['plugin_path'] . 'templates/' . $options['team-style'] . '.php';
             if (file_exists($template)) {
@@ -173,25 +170,25 @@ if (!class_exists('Awsm_team_lite')):
             if (post_type_exists("awsm_team_member")) {
                 return;
             }
-            $singular = __('Team Member', $this->text_domain);
-            $plural   = __('Team Members', $this->text_domain);
+            $singular = __('Team Member', 'awsm-team');
+            $plural   = __('Team Members', 'awsm-team');
             $labels = array(
                 'name' => $plural,
                 'singular_name' => $singular,
-                'menu_name' => __('AWSM Team', $this->text_domain),
-                'add_new' => __('Add New Member', $this->text_domain),
-                'add_new_item' => sprintf(__('Add %s', $this->text_domain), $singular),
-                'new_item' => sprintf(__('New %s', $this->text_domain), $singular),
-                'edit_item' => sprintf(__('Edit %s', $this->text_domain), $singular),
-                'view_item' => sprintf(__('View %s', $this->text_domain), $singular),
-                'all_items' => sprintf(__('Members', $this->text_domain)),
-                'search_items' => sprintf(__('Search %s', $this->text_domain), $plural),
-                'not_found' => sprintf(__('No %s found', $this->text_domain), $plural),
-                'not_found_in_trash' => sprintf(__('No %s found in trash', $this->text_domain), $plural)
+                'menu_name' => __('AWSM Team', 'awsm-team'),
+                'add_new' => __('Add New Member', 'awsm-team'),
+                'add_new_item' => sprintf(__('Add %s', 'awsm-team'), $singular),
+                'new_item' => sprintf(__('New %s', 'awsm-team'), $singular),
+                'edit_item' => sprintf(__('Edit %s', 'awsm-team'), $singular),
+                'view_item' => sprintf(__('View %s', 'awsm-team'), $singular),
+                'all_items' => sprintf(__('Members', 'awsm-team')),
+                'search_items' => sprintf(__('Search %s', 'awsm-team'), $plural),
+                'not_found' => sprintf(__('No %s found', 'awsm-team'), $plural),
+                'not_found_in_trash' => sprintf(__('No %s found in trash', 'awsm-team'), $plural)
             );
             $cp_args = array(
                 'labels' => $labels,
-                'description' => sprintf(__('This is where you can create and manage %s.', $this->text_domain), $plural),
+                'description' => sprintf(__('This is where you can create and manage %s.', 'awsm-team'), $plural),
                 'publicly_queryable' => false,
                 'show_ui' => true,
                 'show_in_menu' => true,
@@ -207,25 +204,25 @@ if (!class_exists('Awsm_team_lite')):
             if (post_type_exists("awsm_team")) {
                 return;
             }
-            $singular = __('Team', $this->text_domain);
-            $plural   = __('Teams', $this->text_domain);
+            $singular = __('Team', 'awsm-team');
+            $plural   = __('Teams', 'awsm-team');
             $labels = array(
                 'name' => $plural,
                 'singular_name' => $singular,
-                'menu_name' => __('Awsm Team', $this->text_domain),
-                'add_new' => __('Add Team', $this->text_domain),
-                'add_new_item' => sprintf(__('Add %s', $this->text_domain), $singular),
-                'new_item' => sprintf(__('New %s', $this->text_domain), $singular),
-                'edit_item' => sprintf(__('Edit %s', $this->text_domain), $singular),
-                'view_item' => sprintf(__('View %s', $this->text_domain), $singular),
-                'all_items' => sprintf(__('Teams', $this->text_domain)),
-                'search_items' => sprintf(__('Search %s', $this->text_domain), $plural),
-                'not_found' => sprintf(__('No %s found', $this->text_domain), $plural),
-                'not_found_in_trash' => sprintf(__('No %s found in trash', $this->text_domain), $plural)
+                'menu_name' => __('Awsm Team', 'awsm-team'),
+                'add_new' => __('Add Team', 'awsm-team'),
+                'add_new_item' => sprintf(__('Add %s', 'awsm-team'), $singular),
+                'new_item' => sprintf(__('New %s', 'awsm-team'), $singular),
+                'edit_item' => sprintf(__('Edit %s', 'awsm-team'), $singular),
+                'view_item' => sprintf(__('View %s', 'awsm-team'), $singular),
+                'all_items' => sprintf(__('Teams', 'awsm-team')),
+                'search_items' => sprintf(__('Search %s', 'awsm-team'), $plural),
+                'not_found' => sprintf(__('No %s found', 'awsm-team'), $plural),
+                'not_found_in_trash' => sprintf(__('No %s found in trash', 'awsm-team'), $plural)
             );
             $cp_args = array(
                 'labels' => $labels,
-                'description' => sprintf(__('This is where you can create and manage %s.', $this->text_domain), $plural),
+                'description' => sprintf(__('This is where you can create and manage %s.', 'awsm-team'), $plural),
                 'show_ui' => true,
                 "show_in_menu" => 'edit.php?post_type=awsm_team_member',
                 'capability_type' => 'post',
@@ -274,7 +271,7 @@ if (!class_exists('Awsm_team_lite')):
             global $post_type,$post;
             if ($post_type == 'awsm_team_member') {
                 if(!has_post_thumbnail( $post->ID )){
-                   $content .= '<p>'.__('Please upload square-cropped photos with a minimum dimension of 500px',$this->text_domain).'</p>';
+                   $content .= '<p>'.__('Please upload square-cropped photos with a minimum dimension of 500px','awsm-team').'</p>';
                 }
             }
             return $content;
@@ -286,9 +283,9 @@ if (!class_exists('Awsm_team_lite')):
         function custom_columns_member($columns){
             $columns = array(
                 'cb' => '<input type="checkbox" />',
-                'title' => __('Name',$this->text_domain),
-                'featured_image' => __('Photo',$this->text_domain),
-                'designation' => __('Designation',$this->text_domain),
+                'title' => __('Name','awsm-team'),
+                'featured_image' => __('Photo','awsm-team'),
+                'designation' => __('Designation','awsm-team'),
                 'date' => 'Date'
              );
             return $columns;
@@ -315,11 +312,11 @@ if (!class_exists('Awsm_team_lite')):
         function custom_columns_team($columns){
             $columns = array(
                 'cb' => '<input type="checkbox" />',
-                'title' => __('Name',$this->text_domain),
-                'members' => __('Members',$this->text_domain),
-                'preset' => __('Preset',$this->text_domain),
-                'style' => __('Style',$this->text_domain),
-                'shortcode' =>__('Shortcode',$this->text_domain)
+                'title' => __('Name','awsm-team'),
+                'members' => __('Members','awsm-team'),
+                'preset' => __('Preset','awsm-team'),
+                'style' => __('Style','awsm-team'),
+                'shortcode' =>__('Shortcode','awsm-team')
              );
             return $columns;
         }
@@ -352,7 +349,7 @@ if (!class_exists('Awsm_team_lite')):
         public function shortcode_preview($post)
         {
             if ('awsm_team' == $post->post_type && 'publish' == $post->post_status) {
-                printf('<p>%1$s: <code>[awsmteam id="%2$s"]</code><button id="copy-awsm" type="button" data-clipboard-text="[awsmteam id=&quot;%2$s&quot;]" class="button">%3$s</button></p>', __("Shortcode", $this->text_domain), $post->ID, __("Copy", $this->text_domain));
+                printf('<p>%1$s: <code>[awsmteam id="%2$s"]</code><button id="copy-awsm" type="button" data-clipboard-text="[awsmteam id=&quot;%2$s&quot;]" class="button">%3$s</button></p>', __("Shortcode", 'awsm-team'), $post->ID, __("Copy", 'awsm-team'));
             }
             return;
         }
@@ -382,7 +379,7 @@ if (!class_exists('Awsm_team_lite')):
          */
         public function add_submenu_items()
         {
-            add_submenu_page('edit.php?post_type=awsm_team_member', __('Add Team', $this->text_domain), __('Add Team', $this->text_domain), 'manage_options', 'post-new.php?post_type=awsm_team');
+            add_submenu_page('edit.php?post_type=awsm_team_member', __('Add Team', 'awsm-team'), __('Add Team', 'awsm-team'), 'manage_options', 'post-new.php?post_type=awsm_team');
         }
         /**
          * Register meta box
@@ -390,9 +387,9 @@ if (!class_exists('Awsm_team_lite')):
          */
         public function register_metaboxes()
         {
-            add_meta_box('member_details', __('Member Details', $this->text_domain), array( $this, 'member_details_meta' ), 'awsm_team_member');
-            add_meta_box('team_details', __('Team Details', $this->text_domain), array( $this, 'team_details_meta' ), 'awsm_team', 'normal', 'high');
-            add_meta_box('awsm_team_pro', __('Upgrade to AWSM Team Pro', $this->text_domain), array( $this, 'pro_metabox' ), 'awsm_team', 'side', 'default');
+            add_meta_box('member_details', __('Member Details', 'awsm-team'), array( $this, 'member_details_meta' ), 'awsm_team_member');
+            add_meta_box('team_details', __('Team Details', 'awsm-team'), array( $this, 'team_details_meta' ), 'awsm_team', 'normal', 'high');
+            add_meta_box('awsm_team_pro', __('Upgrade to AWSM Team Pro', 'awsm-team'), array( $this, 'pro_metabox' ), 'awsm_team', 'side', 'default');
         }
         public function pro_metabox(){
             include $this->settings['plugin_path'] . 'includes/pro-features.php';

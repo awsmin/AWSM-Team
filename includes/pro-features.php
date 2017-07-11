@@ -10,6 +10,6 @@
         <li><strong>Customer Support</strong>
             <br>Premium Chat and Email Support</li>
     </ul>
-    <a class="awsm-team-btn-upgrade" href="http://goo.gl/A8Rmxn" target="_blank"><?php _e('Upgrade Now ($15)',$this->text_domain);?></a>
-    <p><?php _e('Lifetime license. Unlimited updates.',$this->text_domain);?></p>
+    <a class="awsm-team-btn-upgrade" href="http://goo.gl/A8Rmxn" target="_blank"><?php _e('Upgrade Now','awsm-team');?></a>
+    <p><?php _e('Lifetime license. Unlimited updates.','awsm-team');?></p>
 </div>

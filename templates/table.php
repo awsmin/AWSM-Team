@@ -3,19 +3,19 @@
 	<div class="awsm-table <?php echo $this->item_style($options);?>">
 		<div class="awsm-table-row awsm-table-head">
 			<div class="awsm-table-cell">
-				<?php _e('Image'); ?>
+				<?php _e('Image','awsm-team'); ?>
 			</div><!-- .awsm-table-cell -->
 			<div class="awsm-table-cell">
-				<?php _e('Name'); ?>
+				<?php _e('Name','awsm-team'); ?>
 			</div><!-- .awsm-table-cell -->
 			<div class="awsm-table-cell">
-				<?php _e('Designaion'); ?>
+				<?php _e('Designation','awsm-team'); ?>
 			</div><!-- .awsm-table-cell -->
 			<div class="awsm-table-cell">
-				<?php _e('Short Description'); ?>
+				<?php _e('Short Description','awsm-team'); ?>
 			</div><!-- .awsm-table-cell -->			
 			<div class="awsm-table-cell">
-				<?php _e('Social Links'); ?>
+				<?php _e('Social Links','awsm-team'); ?>
 			</div><!-- .awsm-table-cell -->
 		</div>
 		<?php 
