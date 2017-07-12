@@ -53,12 +53,18 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Changelog ==
 
+= V 1.1.1 - 2017-12-07 =
+* Fixed: Modernizr conflicts
+
 = V 1.1 - 2017-11-07 =
 
 * Fixed: Members limit issue
 * Fixed: Language localization issue
 
 == Upgrade Notice ==
+
+= V 1.1.1 - 2017-12-07 =
+* Fixed: Modernizr conflicts
 
 = V 1.1 - 2017-11-07 =
 

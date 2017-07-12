@@ -3,7 +3,7 @@
 Plugin Name: AWSM Team
 Plugin URI: http://awsm.in/team-pro-documentation
 Description: The most versatile plugin to create and manage your Team page. Packed with 8 unique presets and number of styles to choose from.
-Version: 1.1
+Version: 1.1.1
 Author: AWSM Innovations
 Author URI: http://awsm.in/
 License: GPL
@@ -45,7 +45,7 @@ if (!class_exists('Awsm_team_lite')):
                 'plugin_url' => plugin_dir_url(__FILE__),
                 'plugin_base' => dirname(plugin_basename(__FILE__)),
                 'plugin_file' => __FILE__,
-                'plugin_version' => '1.1',
+                'plugin_version' => '1.1.1',
             );
             $this->load_plugin_textdomain();
             $this->run_plugin();
