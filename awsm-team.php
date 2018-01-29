@@ -241,7 +241,7 @@ if (!class_exists('Awsm_team_lite')):
             if (is_admin()) {
                 add_action('add_meta_boxes', array( $this, 'register_metaboxes' ));
                 add_action('save_post', array( $this, 'save_metabox_data' ), 10, 3);
-                add_action('admin_init', array( $this, 'meta_box_scripts' ));
+                add_action('admin_enqueue_scripts', array( $this, 'meta_box_scripts' ) , 10, 1 );
                 add_action('admin_menu', array( $this, 'add_submenu_items' ), 12);
                 add_action('edit_form_after_title', array( $this, 'shortcode_preview' ));
                 add_filter('manage_awsm_team_member_posts_columns' , array( $this, 'custom_columns_member' ));
@@ -357,19 +357,17 @@ if (!class_exists('Awsm_team_lite')):
          * Loads meta box helper scripts
          * since 1.0
          */
-        public function meta_box_scripts()
+        public function meta_box_scripts($hook)
         {
-            global $pagenow, $typenow, $post;
-            if (empty($typenow) && !empty($_GET['post'])) {
-                $post    = get_post($_GET['post']);
-                $typenow = $post->post_type;
-            }
-            if (($pagenow == 'post-new.php' or $pagenow == 'post.php') and ($typenow == 'awsm_team_member' or $typenow == 'awsm_team')) {
+            global $post;
+            if ( $hook == 'post-new.php' || $hook == 'post.php' ) {
+                if( 'awsm_team_member' ==  $post->post_type or 'awsm_team' ==  $post->post_type){
                 wp_enqueue_style('awsm-team-admin', plugins_url('css/admin.css', $this->settings['plugin_file']), false, $this->settings['plugin_version'], 'all');
                 wp_enqueue_script('team-meta-box', plugins_url('js/team-admin.js', $this->settings['plugin_file']), array( 'jquery', 'jquery-ui-sortable', 'wp-util' ), $this->settings['plugin_version']);
                 wp_enqueue_script('select2', plugins_url('js/select2.min.js', $this->settings['plugin_file']), array( 'jquery' ), $this->settings['plugin_version']);
                 wp_enqueue_style('select2', plugins_url('css/select2.min.css', $this->settings['plugin_file']), false, $this->settings['plugin_version'], 'all');
                 wp_enqueue_style('awsm-team-icomoon-css', plugins_url('css/icomoon.css', $this->settings['plugin_file']), false, $this->settings['plugin_version'], 'all');
+               }
             }
             
         }
@@ -444,10 +442,6 @@ if (!class_exists('Awsm_team_lite')):
             }
             if ($post->post_type == 'awsm_team_member') {
                 $team_repeater = array(
-                    'awsm_contact' => array(
-                        'label' => 'awsm-team-label',
-                        'content' => 'awsm-team-content'
-                    ),
                     'awsm_social' => array(
                         'icon' => 'awsm-team-icon',
                         'link' => 'awsm-team-link'
