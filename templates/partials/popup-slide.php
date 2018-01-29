@@ -10,7 +10,6 @@
                 $this->checkprint('<h3>%s</h3>', $teamdata['awsm-team-designation']);
                 the_title( '<h2>', '</h2>'); 
                 the_content();
-                include( $this->settings['plugin_path'].'templates/partials/contact.php' );
                 include( $this->settings['plugin_path'].'templates/partials/social.php' );
                 ?>
             </div> <!-- .awsm-modal-details -->

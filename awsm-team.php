@@ -400,7 +400,6 @@ if (!class_exists('Awsm_team_lite')):
         public function member_details_meta($post)
         {
             wp_nonce_field(basename(__FILE__), 'awsm_meta_details');
-            $awsm_contact = get_post_meta($post->ID, 'awsm_contact', true);
             $awsm_social  = get_post_meta($post->ID, 'awsm_social', true);
             $socialicons  = array('mail', 'link', 'google-plus', 'google-plus2', 'hangouts', 'google-drive', 'facebook', 'facebook2', 'instagram', 'whatsapp', 'twitter', 'youtube', 'vimeo', 'vimeo2', 'flickr', 'flickr2', 'dribbble', 'behance', 'behance2', 'dropbox', 'wordpress', 'blogger', 'tumblr', 'tumblr2', 'skype', 'linkedin2', 'linkedin', 'stackoverflow', 'pinterest2', 'pinterest', 'foursquare','github', 'flattr', 'xing', 'xing2', 'stumbleupon', 'stumbleupon2', 'delicious', 'lastfm', 'lastfm2', 'hackernews', 'reddit', 'soundcloud', 'soundcloud2', 'yahoo', 'blogger2', 'ello', 'wordpress2', 'steam', 'steam2', '500px', 'deviantart', 'twitch', 'feed', 'feed2', 'sina-weibo', 'renren', 'vk', 'vine', 'telegram', 'spotify', 'mail2', 'mail3');
             include $this->settings['plugin_path'] . 'includes/member-details.php';
@@ -537,7 +536,6 @@ if (!class_exists('Awsm_team_lite')):
             }
             
             $metakeys['awsm_team_member'] = array(
-                'awsm_contact',
                 'awsm_social',
                 'awsm-team-designation',
                 'awsm-team-short-desc'
@@ -550,7 +548,6 @@ if (!class_exists('Awsm_team_lite')):
                 'custom_css'
             );
             $options['awsm_team_member']  = array(
-                'awsm_contact' => array(),
                 'awsm_social' => array(),
                 'awsm-team-designation' => '',
                 'awsm-team-short-desc' => ''
