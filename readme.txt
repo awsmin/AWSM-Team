@@ -2,7 +2,7 @@
 Contributors: awsmin
 Tags: team, team page, team members, team builder, team shortcode, team layout, team plugin, members, users
 Requires at least: 4.0
-Tested up to: 4.8
+Tested up to: 4.9.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -52,6 +52,9 @@ The lite version comes with 3 presets and a number of style options. You can cre
 6. Table Layout
 
 == Changelog ==
+
+= V 1.1.2 - 2018-01-29 =
+* Fixed: Flamingo plugin conflicts and minor bug fixes
 
 = V 1.1.1 - 2017-12-07 =
 * Fixed: Modernizr conflicts
