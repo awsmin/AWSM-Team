@@ -53,6 +53,9 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Changelog ==
 
+= V 1.1.3 - 2018-03-07 =
+* Fixed: Email link not working issue
+
 = V 1.1.2 - 2018-01-29 =
 * Fixed: Flamingo plugin conflicts and minor bug fixes
 
