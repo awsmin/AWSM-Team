@@ -21,8 +21,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.awsm-icon-viber:before {
+  content: "\e923";
+}
+.awsm-icon-slack:before {
+  content: "\e924";
+}
+.awsm-icon-discord:before {
+  content: "\e925";
+}
+.awsm-icon-mixer:before {
+  content: "\e926";
+}
+.awsm-icon-arrow-down:before {
+  content: "\e60f";
+}
+.awsm-icon-arrow-left:before {
+  content: "\e610";
+}
+.awsm-icon-arrow-right:before {
+  content: "\e611";
+}
+.awsm-icon-close:before {
+  content: "\e612";
+}
 .awsm-icon-yelp:before {
   content: "\e900";
+}
+.awsm-icon-github:before {
+  content: "\e901";
 }
 .awsm-icon-flattr:before {
   content: "\e902";
@@ -117,20 +144,8 @@
 .awsm-icon-mail3:before {
   content: "\e920";
 }
-.awsm-icon-arrow-down:before {
-  content: "\e60f";
-}
-.awsm-icon-arrow-left:before {
-  content: "\e610";
-}
-.awsm-icon-arrow-right:before {
-  content: "\e611";
-}
-.awsm-icon-close:before {
-  content: "\e612";
-}
-.awsm-icon-github:before {
-  content: "\e901";
+.awsm-icon-check:before {
+  content: "\e921";
 }
 .awsm-icon-mail:before {
   content: "\e945";
@@ -225,7 +240,27 @@
 .awsm-icon-foursquare:before {
   content: "\ead6";
 }
-
+.awsm-icon-snapchat-ghost:before {
+  content: "\e927";
+}
+.awsm-icon-imdb:before {
+  content: "\e928";
+}
+.awsm-icon-meetup:before {
+  content: "\e929";
+}
+.awsm-icon-wechat:before {
+  content: "\e92a";
+}
+.awsm-icon-weixin:before {
+  content: "\e92a";
+}
+.awsm-icon-quora:before {
+  content: "\e922";
+}
+.awsm-icon-phone:before {
+  content: "\e942";
+}
 
 .awsm-grid-wrapper,
 .awsm-grid-wrapper *,

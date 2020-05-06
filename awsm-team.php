@@ -402,7 +402,7 @@ if (!class_exists('Awsm_team_lite')):
         {
             wp_nonce_field(basename(__FILE__), 'awsm_meta_details');
             $awsm_social  = get_post_meta($post->ID, 'awsm_social', true);
-            $socialicons  = array('mail', 'link', 'google-plus', 'google-plus2', 'hangouts', 'google-drive', 'facebook', 'facebook2', 'instagram', 'whatsapp', 'twitter', 'youtube', 'vimeo', 'vimeo2', 'flickr', 'flickr2', 'dribbble', 'behance', 'behance2', 'dropbox', 'wordpress', 'blogger', 'tumblr', 'tumblr2', 'skype', 'linkedin2', 'linkedin', 'stackoverflow', 'pinterest2', 'pinterest', 'foursquare','github', 'flattr', 'xing', 'xing2', 'stumbleupon', 'stumbleupon2', 'delicious', 'lastfm', 'lastfm2', 'hackernews', 'reddit', 'soundcloud', 'soundcloud2', 'yahoo', 'blogger2', 'ello', 'wordpress2', 'steam', 'steam2', '500px', 'deviantart', 'twitch', 'feed', 'feed2', 'sina-weibo', 'renren', 'vk', 'vine', 'telegram', 'spotify', 'mail2', 'mail3');
+            $socialicons  = array( 'mail', 'link', 'phone', 'google-plus', 'google-plus2', 'hangouts', 'google-drive', 'facebook', 'facebook2', 'instagram', 'whatsapp', 'twitter', 'youtube', 'vimeo', 'vimeo2', 'flickr', 'flickr2', 'dribbble', 'behance', 'behance2', 'dropbox', 'wordpress', 'blogger', 'tumblr', 'tumblr2', 'skype', 'linkedin2', 'linkedin', 'stackoverflow', 'pinterest2', 'pinterest', 'foursquare', 'github', 'flattr', 'xing', 'xing2', 'stumbleupon', 'stumbleupon2', 'delicious', 'lastfm', 'lastfm2', 'hackernews', 'reddit', 'soundcloud', 'soundcloud2', 'yahoo', 'blogger2', 'ello', 'wordpress2', 'steam', 'steam2', '500px', 'deviantart', 'twitch', 'feed', 'feed2', 'sina-weibo', 'renren', 'vk', 'vine', 'telegram', 'spotify', 'mail2', 'mail3', 'imdb', 'discord', 'slack', 'viber', 'yelp', 'quora', 'meetup', 'mixer', 'snapchat-ghost', 'wechat' );
             include $this->settings['plugin_path'] . 'includes/member-details.php';
         }
         /**
@@ -633,7 +633,20 @@ if (!class_exists('Awsm_team_lite')):
                 }
 
             }
-        }
+		}
+		/**
+		 * Phone number validation.
+		 *
+		 * @param string $phone The phone number.
+		 * @return boolean
+		 */
+		public function validate_phone_number( $phone ) {
+			if ( preg_match( '/^(?=.*[0-9])[- +()0-9]{4,15}+$/', $phone ) ) {
+				return true;
+			} else {
+				return false;
+			}
+		}
     }
 function awms_team_activation(){
     if ( !class_exists('Awsm_team') ) {
