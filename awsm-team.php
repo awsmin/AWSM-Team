@@ -196,9 +196,10 @@ if (!class_exists('Awsm_team_lite')):
                 'supports' => array(
                     'title',
                     'editor',
-                    'thumbnail'
+					'thumbnail',
                 ),
-                'menu_icon' => 'dashicons-admin-users'
+				'menu_icon' => 'dashicons-admin-users',
+				'show_in_rest' => true,
             );
             register_post_type('awsm_team_member', $cp_args);
             if (post_type_exists("awsm_team")) {
