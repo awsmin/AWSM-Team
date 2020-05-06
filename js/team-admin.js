@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 		         event.trigger.textContent = 'Copy';
 		     }, 2000);
 		});
-		copyCode.on('error', function(event) { 
+		copyCode.on('error', function(event) {
 		    event.trigger.textContent = 'Press "Ctrl + C" to copy';
 		    window.setTimeout(function() {
 		        event.trigger.textContent = 'Copy';
@@ -69,11 +69,45 @@ jQuery(document).ready(function($) {
         memberinfo = { src: $($el).data('img'), title: $el.text(), id: $el.val() };
         $('.awsm-members-list-selected').append(memberlist(memberinfo));
         $el.prop('disabled', 'disabled');
+	});
+	$("#awsm-members").on("select2:opening", function () {
+        $('#select2-awsm-members-results').show();
+    });
+    var scrollTop;
+    $("#awsm-members").on("select2:select", function (e) {
+        if (e.params.originalEvent.currentTarget.nodeName === 'LI') {
+          $(e.params.originalEvent.currentTarget).attr('member-disabled', 'true');
+        }
+        var $pr = $( '#'+e.params.data._resultId ).parent();
+        $pr.prop('scrollTop', scrollTop );
+    });
+
+    $('#awsm-members').on("select2:selecting", function( e ){
+        var $pr = $( '#'+e.params.args.data._resultId ).parent();
+        scrollTop = $pr.prop('scrollTop');
+    });
+
+    $("#awsm-members").on("select2:closing", function (e) {
+        e.preventDefault();
+        $('#select2-awsm-members-results').hide();
+        awsm_select();
+    });
+
+    $("#awsm-members").select2().on("select2:unselecting", function (e) {
+        // make sure we are on the list and not within input box
+        if (e.params.originalEvent.currentTarget.nodeName === 'LI') {
+          e.preventDefault();
+        }
+    });
+
+    $("#awsm-members").select2().on("select2:close", function (e) {
+        e.preventDefault();
+        $('#select2-awsm-members-results').hide();
         awsm_select();
     });
 
     $('.awsm-radio-hidden').on('change',awsm_update_style);
-    
+
     function awsm_formaticon(icon) {
         if (!icon.id) {
             return icon.text; }
@@ -84,26 +118,27 @@ jQuery(document).ready(function($) {
     }
 
     var $awsmmembers = awsm_select();
-    
+
     awsm_update_style();
 
     function awsm_formatmember(team) {
-        var memberlist = wp.template('awsm-member-select'),
-            memberinfo = { src: $(team.element).data('img'), title: team.text, id: team.id, disabled: team.disabled };
-        var markup = memberlist(memberinfo);
-        return markup;
+		var memberlist = wp.template('awsm-member-select'),
+		memberinfo = { src: $(team.element).data('img'), title: team.text, id: team.id, disabled: team.disabled };
+		var markup = memberlist(memberinfo);
+		return markup;
     }
 
     function awsm_select() {
         return $('#awsm-members').select2({
             placeholder: "Select a member",
             width: "100%",
-            templateResult: awsm_formatmember,
+			templateResult: awsm_formatmember,
+			closeOnSelect: false,
             escapeMarkup: function(markup) {return markup; },
         });
     }
     function awsm_update_style(e){
-    	var $preset = $('input[name=team-style]:checked'),preset=$preset.val(),style=$preset.data("style"),column=$preset.data("column");	
+    	var $preset = $('input[name=team-style]:checked'),preset=$preset.val(),style=$preset.data("style"),column=$preset.data("column");
         if(column){ $('.awsm-columns-wrap').show()}else{$('.awsm-columns-wrap').hide();}
     	$('.awsm-styles option').hide();
     	for (var i = 0 ; i < style; i++) {
@@ -112,6 +147,6 @@ jQuery(document).ready(function($) {
         if(e){
             $('.awsm-styles option:eq(0)').prop('selected', true);
         }
-    	
+
     }
 });

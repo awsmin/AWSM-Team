@@ -8,10 +8,10 @@
 						<span><?php _e('Select members from the dropdown, drag and drop them to reorder.', 'awsm-team');?></span>
 					</div>
 					<div class="awsm-select-members">
-						<?php 
+						<?php
 						if($members->have_posts()): ?>
-						<select name="members" id="awsm-members">			
-							<?php 
+						<select name="members" id="awsm-members">
+							<?php
 							echo '<option value="" data-img="'.$defaultimage.'">'._e('Select a member','awsm-team').'</option>';
 							while($members->have_posts()):  $members->the_post();
 								$disabled ="";
@@ -21,10 +21,10 @@
 							wp_reset_postdata();
 							?>
 						</select>
-						<?php else: 
+						<?php else:
 						$addmember = admin_url('post-new.php?post_type=awsm_team_member');
 						echo '<p>';
-						_e('You haven’t added any team members yet. ','awsm-team'); 
+						_e('You haven’t added any team members yet. ','awsm-team');
 						echo '<a href="'.$addmember.'">'.__("Add a team member",'awsm-team').'</a>';
 						echo '</p>';
 						endif;?>
@@ -41,7 +41,7 @@
 						<?php
 						if($options['memberlist']):
 							$teamargs = array(
-       						'orderby' => 'post__in', 
+       						'orderby' => 'post__in',
           					'post_type' => 'awsm_team_member',
           					'post__in' => $options['memberlist'],
           					'posts_per_page' => -1
@@ -53,7 +53,7 @@
 		        					<img width="31" height="31" src="<?php echo $this->team_thumbnail($team->post->ID,'thumbnail');?>"/>
 		        					<p><?php the_title();?></p><span class="remove-member-to-list" data-member="<?php echo $team->post->ID; ?>"><i class="awsm-icon-close"></i></span>
 		        					<input type="hidden" name="memberlist[]" value="<?php echo $team->post->ID;?>">
-		        					</li>	 
+		        					</li>
 		        				<?php endwhile;
 	        				wp_reset_postdata();
 	        				endif;
@@ -98,13 +98,13 @@
 								<div class="awsm-col-2">
 									<?php
 									$preset = array('style-1'=>'Style 1','style-2'=>'Style 2','style-3'=>'Style 3','style-4'=>'Style 4');
-									$this->selectbuilder('preset', $preset, $options['preset'], '', "awsm-select-default dyn-sel awsm-styles",'key'); 
+									$this->selectbuilder('preset', $preset, $options['preset'], '', "awsm-select-default dyn-sel awsm-styles",'key');
 									?>
 								</div><!-- .awsm-col-2 -->
 								<div class="awsm-col-2 awsm-columns-wrap">
 									<?php
 									$columns = array('2'=>'2 Column','3'=>'3 Column','4'=>'4 Column','5'=>'5 Column');
-									$this->selectbuilder('columns', $columns, $options['columns'], '', "awsm-select-default dyn-sel awsm-columns",'key'); 
+									$this->selectbuilder('columns', $columns, $options['columns'], '', "awsm-select-default dyn-sel awsm-columns",'key');
 									?>
 								</div><!-- .awsm-col-2 -->
 							</div><!-- .awsm-row -->
@@ -122,13 +122,12 @@
 		</div><!-- .awsm-team-customize -->
 </div><!-- wrap -->
 <script type="text/html" id="tmpl-awsm-member-select">
-    <div class="select2-result-repository clearfix">
-    	<# if ( data.src ) { #>
-    	<img class="select2-result-repository__avatar" width="31" height="31" src="{{{data.src}}}" />
-    	<# } #>
-    	<p class="select2-result-repository__title">{{{data.title}}}</p>
-    	<# if ( data.disabled ) { #>
-    	<span class="select2-result-repository__disabled"><?php _e('Added','awsm-team');?></span>
-    	<# } #>
-   </div>
+	<div class="select2-result-repository clearfix">
+		<# if ( data.src ) { #>
+			<div class="awsm-member-thumb">
+				<img class="select2-result-repository__avatar" width="150" height="150" src="{{{data.src}}}" />
+			</div>
+		<# } #>
+		<p class="select2-result-repository__title">{{{data.title}}}</p>
+	</div>
 </script>
