@@ -415,7 +415,8 @@ if (!class_exists('Awsm_team_lite')):
             wp_nonce_field(basename(__FILE__), 'awsm_meta_details');
             $args         = array(
                 'post_type' => 'awsm_team_member',
-                'posts_per_page' => -1
+				'posts_per_page' => -1,
+				'post_status' => 'publish',
             );
             $members      = new WP_Query($args);
             $options      = $this->get_options('awsm_team', $post->ID);
