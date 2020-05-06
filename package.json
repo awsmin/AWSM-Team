@@ -1,0 +1,56 @@
+{
+	"name": "awsm-team",
+	"version": "1.2.0",
+	"description": "The most versatile plugin to create and manage your Team page. Packed with 8 unique presets and number of styles to choose from.",
+	"main": "gulpfile.js",
+	"scripts": {
+		"start": "gulp",
+		"watch": "cross-env NODE_ENV=development gulp watch",
+		"build": "cross-env NODE_ENV=production gulp build",
+		"archive": "cross-env git archive --format=zip --prefix=awsm-team/ --output=./build/awsm-team.zip --worktree-attributes master",
+		"dev-archive": "cross-env git archive --format=zip --prefix=awsm-team/ --output=./build/awsm-team.zip --worktree-attributes dev-branch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:awsmin/AWSM-Team.git"
+	},
+	"author": "AWSM Innovations",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/awsmin/AWSM-Team/issues"
+	},
+	"homepage": "https://awsm.in",
+	"devDependencies": {
+		"browser-sync": "^2.26.7",
+		"cross-env": "^5.2.1",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^5.0.0",
+		"gulp-clean-css": "^3.10.0",
+		"gulp-clone": "^2.0.1",
+		"gulp-concat": "^2.6.1",
+		"gulp-line-ending-corrector": "^1.0.3",
+		"gulp-rename": "^1.4.0",
+		"gulp-sort": "^2.0.0",
+		"gulp-strip-debug": "^3.0.0",
+		"gulp-uglify": "^3.0.2",
+		"gulp-wp-pot": "^2.3.6",
+		"merge-stream": "^1.0.1",
+		"prettier": "^1.19.1"
+	},
+	"browserslist": [
+		"> 0.2%",
+		"ie >= 8",
+		"ie_mob >= 10",
+		"ff >= 14",
+		"chrome >= 21",
+		"safari >= 5",
+		"opera >= 23",
+		"ios >= 7",
+		"android >= 4",
+		"bb >= 10"
+	],
+	"dependencies": {
+		"acorn": "^6.4.1",
+		"jquery-mousewheel": "^3.1.13"
+	}
+}

@@ -1,270 +1,5 @@
-.awsm-grid-wrapper,
-.awsm-grid-wrapper *,
-.awsm-grid-wrapper::before,
-.awsm-grid-wrapper::after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.awsm-grid-wrapper figcaption,
-.awsm-grid-wrapper figure {
-    display: block;
-}
-
-.awsm-grid-wrapper figure {
-    margin: 0;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-}
-
-html.awsm-popup-on{
-    height: 100%;
-    overflow: hidden;
-}
-
-.awsm-personal-info,
-.awsm-contact-info,
-.awsm-flip-front,
-.awsm-flip-back-inner {
-    display: block;
-}
-
-.awsm-grid-wrapper a {
-    color: #aaa;
-    text-decoration: none;
-}
-
-.awsm-grid-wrapper a:hover,
-.awsm-grid-wrapper a:active {
-    color: #333;
-}
-
-.grid-style,
-.circles-style {
-    line-height: 1.2;
-}
-
-.clearfix::after,
-.awsm-grid::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-.awsm-grid-wrapper .awsm-grid {
-    list-style: none;
-    padding: 30px 0;
-    margin: 0 -15px;
-}
-
-.awsm-grid-wrapper .awsm-grid.drawer-style {
-    margin: 0;
-}
-
-.awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
-    float: left;
-    width: 25%;
-    padding: 0 15px;
-    margin: 0 0 30px;
-    clear: none;
-}
-
-.awsm-grid-wrapper .grid-2-col > .awsm-grid-card {
-    width: 50%;
-}
-
-.awsm-grid-wrapper .grid-3-col > .awsm-grid-card {
-    width: 33.33%;
-}
-
-.awsm-grid-wrapper .grid-4-col > .awsm-grid-card {
-    width: 25%;
-}
-
-.awsm-grid-wrapper .grid-5-col > .awsm-grid-card {
-    width: 20%;
-}
-
-figure {
-    overflow: hidden;
-}
-
-.awsm-grid-wrapper a {
-    text-decoration: none;
-    box-shadow: none;
-    border-bottom: 0;
-    outline: none;
-}
-
-.awsm-grid-wrapper p {
-    line-height: 1.4;
-}
-
-.awsm-grid figure {
-    position: relative;
-    margin: 0;
-}
-
-.awsm-grid figure img {
-    width: 100%;
-    display: block;
-    position: relative;
-    margin: 0;
-    border: none;
-}
-
-.awsm-grid-wrapper .awsm-grid h3 {
-    margin: 0 0 3px;
-    padding: 0;
-    font-size: 1.17em;
-    line-height: 1.4;
-    color: #1f1f1f;
-}
-
-.awsm-grid-wrapper ul {
-    list-style: none;
-    line-height: normal;
-}
-
-.awsm-grid-wrapper .awsm-social-icons {
-    padding: 0;
-    margin: 0 -5px;
-}
-
-.awsm-social-icons span {
-    display: inline-block;
-    padding: 0 5px;
-    margin-bottom: 2px;
-}
-
-.awsm-social-icons a {
-    display: block;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-    line-height: 1;
-}
-
-.awsm-social-icons a:hover {
-    -moz-transform: translateY(-4px);
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-}
-
-.awsm-grid-wrapper .awsm-contact-details {
-    margin-bottom: 20px;
-}
-
-.awsm-contact-details > p {
-    padding: 10px 0;
-    margin: 0 !important;
-    border-bottom: 1px dotted rgba(35, 35, 35, 0.2);
-}
-
-.awsm-contact-details span {
-    min-width: 100px;
-    margin-right: 6px;
-}
-
-figcaption p {
-    font-size: 14px;
-}
-
-figure figcaption a,
-.awsm-popup-details a,
-.awsm-popup-items a,
-.drawer-style a {
-    box-shadow: none;
-    border-bottom: 0;
-}
-
-.awsm-grid-nav {
-    display: none !important;
-}
-
-.awsm-content-scrollbar {
-    padding-right: 30px;
-}
-
-.awsm-personal-details {
-    max-height: 293px;
-    overflow: hidden;
-}
-
-.awsm-personal-info {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.awsm-personal-info span {
-    text-transform: uppercase;
-    font-size: 0.815em;
-    line-height: 1.4;
-    display: block;
-}
-
-.awsm-contact-info p {
-    margin: 0 0 15px;
-    line-height: normal;
-    color: #1f1f1f;
-}
-
-.awsm-coming-soon {
-    text-align: center;
-    color: #333;
-}
-
-.awsm-grid-wrapper a.awsm-nav-item,
-.awsm-grid-wrapper a.awsm-modal-close,
-.awsm-grid-wrapper .awsm-contact-details a,
-.awsm-grid-wrapper .awsm-social-icons a {
-    text-decoration: none;
-    border: none;
-}
-
-@media (max-width:1230px) {
-    .awsm-grid-wrapper .grid-5-col > .awsm-grid-card {
-        width: 25%;
-    }
-
-}
-
-@media (max-width:1024px) {
-    .awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
-        width: 33.333%;
-    }
-
-    .awsm-grid-wrapper .grid-2-col > .awsm-grid-card {
-        width: 50%;
-    }
-
-}
-
-@media (max-width:992px) {
-    .awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
-        width: 50%;
-    }
-
-}
-
-@media (max-width:830px) {
-    .awsm-popup-on body {
-        overflow: auto;
-    }
-
-}
-
-@media (max-width:678px) {
-    .awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
-        width: 100%;
-    }
-
-}
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'awsmicon';
   src: url('fonts/icomoon.eot');
   src: url('fonts/icomoon.eot') format('embedded-opentype'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.svg') format('svg');
   font-weight: normal;
@@ -275,7 +10,7 @@ figure figcaption a,
 [class*=" awsm-icon-"] {
 
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'awsmicon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -491,6 +226,279 @@ figure figcaption a,
   content: "\ead6";
 }
 
+
+.awsm-grid-wrapper,
+.awsm-grid-wrapper *,
+.awsm-grid-wrapper::before,
+.awsm-grid-wrapper::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.awsm-grid-wrapper figcaption,
+.awsm-grid-wrapper figure {
+    display: block;
+}
+
+.awsm-grid-wrapper figure {
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+html.awsm-popup-on{
+    height: 100%;
+    overflow: hidden;
+}
+
+.awsm-personal-info,
+.awsm-contact-info,
+.awsm-flip-front,
+.awsm-flip-back-inner {
+    display: block;
+}
+
+.awsm-grid-wrapper a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.awsm-grid-wrapper a:hover,
+.awsm-grid-wrapper a:active {
+    color: #333;
+}
+
+.grid-style,
+.circles-style {
+    line-height: 1.2;
+}
+
+.clearfix::after,
+.awsm-grid::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.awsm-grid-wrapper .awsm-grid {
+    list-style: none;
+    padding: 30px 0;
+    margin: 0 -15px;
+}
+
+.awsm-grid-wrapper .awsm-grid.drawer-style {
+    margin: 0;
+}
+
+.awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    margin: 0 0 30px;
+    clear: none;
+}
+
+.awsm-grid-wrapper .grid-2-col > .awsm-grid-card {
+    width: 50%;
+}
+
+.awsm-grid-wrapper .grid-3-col > .awsm-grid-card {
+    width: 33.33%;
+}
+
+.awsm-grid-wrapper .grid-4-col > .awsm-grid-card {
+    width: 25%;
+}
+
+.awsm-grid-wrapper .grid-5-col > .awsm-grid-card {
+    width: 20%;
+}
+
+figure {
+    overflow: hidden;
+}
+
+.awsm-grid-wrapper a {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 0;
+    outline: none;
+}
+
+.awsm-grid-wrapper p {
+    line-height: 1.4;
+}
+
+.awsm-grid figure {
+    position: relative;
+    margin: 0;
+}
+
+.awsm-grid figure img {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0;
+    border: none;
+}
+
+.awsm-grid-wrapper .awsm-grid h3 {
+    margin: 0 0 3px;
+    padding: 0;
+    font-size: 1.17em;
+    line-height: 1.4;
+    color: #1f1f1f;
+}
+
+.awsm-grid-wrapper ul {
+    list-style: none;
+    line-height: normal;
+}
+
+.awsm-grid-wrapper .awsm-social-icons {
+    padding: 0;
+    margin: 0 -5px;
+}
+
+.awsm-social-icons span {
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 2px;
+}
+
+.awsm-social-icons a {
+    display: block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -moz-transition: transform 0.3s, -moz-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s;
+    line-height: 1;
+}
+
+.awsm-social-icons a:hover {
+    -moz-transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+        transform: translateY(-4px);
+}
+
+.awsm-grid-wrapper .awsm-contact-details {
+    margin-bottom: 20px;
+}
+
+.awsm-contact-details > p {
+    padding: 10px 0;
+    margin: 0 !important;
+    border-bottom: 1px dotted rgba(35, 35, 35, 0.2);
+}
+
+.awsm-contact-details span {
+    min-width: 100px;
+    margin-right: 6px;
+}
+
+figcaption p {
+    font-size: 14px;
+}
+
+figure figcaption a,
+.awsm-popup-details a,
+.awsm-popup-items a,
+.drawer-style a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 0;
+}
+
+.awsm-grid-nav {
+    display: none !important;
+}
+
+.awsm-content-scrollbar {
+    padding-right: 30px;
+}
+
+.awsm-personal-details {
+    max-height: 293px;
+    overflow: hidden;
+}
+
+.awsm-personal-info {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.awsm-personal-info span {
+    text-transform: uppercase;
+    font-size: 0.815em;
+    line-height: 1.4;
+    display: block;
+}
+
+.awsm-contact-info p {
+    margin: 0 0 15px;
+    line-height: normal;
+    color: #1f1f1f;
+}
+
+.awsm-coming-soon {
+    text-align: center;
+    color: #333;
+}
+
+.awsm-grid-wrapper a.awsm-nav-item,
+.awsm-grid-wrapper a.awsm-modal-close,
+.awsm-grid-wrapper .awsm-contact-details a,
+.awsm-grid-wrapper .awsm-social-icons a {
+    text-decoration: none;
+    border: none;
+}
+
+@media (max-width:1230px) {
+    .awsm-grid-wrapper .grid-5-col > .awsm-grid-card {
+        width: 25%;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
+        width: 33.333%;
+    }
+
+    .awsm-grid-wrapper .grid-2-col > .awsm-grid-card {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:992px) {
+    .awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:830px) {
+    .awsm-popup-on body {
+        overflow: auto;
+    }
+
+}
+
+@media (max-width:678px) {
+    .awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
+        width: 100%;
+    }
+
+}
+
 /****************** Presets ***********************/
 
 /*------------- Cards 1-----------*/
@@ -503,9 +511,10 @@ figure figcaption a,
 
 .cards-style.style-1 figure::before {
 	content: "";
-	background: rgba(255, 255, 255, 0.9);
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 37%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%); /* FF3.6-15 */
+	background: rgba(255, 255, 255, 0.9); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 37%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(37%, rgba(255, 255, 255, 0.6)), color-stop(78%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 1)));
+	background: -moz- oldlinear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 37%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 37%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	position: absolute;
 	top: 0;
@@ -514,19 +523,24 @@ figure figcaption a,
 	left: 0;
 	-moz-transform: translateY(100%) translateY(-90px);
 	-webkit-transform: translateY(100%) translateY(-90px);
-	-o-transform: translateY(100%) translateY(-90px);
 	-ms-transform: translateY(100%) translateY(-90px);
 	transform: translateY(100%) translateY(-90px);
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-moz-transition: transform 0.4s, -moz-transform 0.4s;
 	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s;
 	z-index: 1;
 }
 
 .cards-style.style-1 figure img {
 	-webkit-transition: -webkit-transform 0.8s;
 	-moz-transition: -moz-transform 0.8s;
+	transition: -webkit-transform 0.8s;
+	-moz-transition: transform 0.8s, -moz-transform 0.8s;
 	transition: transform 0.8s;
+	transition: transform 0.8s, -webkit-transform 0.8s, -moz-transform 0.8s;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	max-width: 160px;
@@ -543,14 +557,16 @@ figure figcaption a,
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-	-moz-transform: translateY(calc(100% - 100px));
-	-webkit-transform: translateY(calc(100% - 100px));
-	-o-transform: translateY(calc(100% - 100px));
+	-moz-transform: translateY(-moz-calc(100% - 100px));
+	-webkit-transform: translateY(-webkit-calc(100% - 100px));
 	-ms-transform: translateY(calc(100% - 100px));
 	transform: translateY(calc(100% - 100px));
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-moz-transition: transform 0.4s, -moz-transform 0.4s;
 	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s;
 	text-align: center;
 	z-index: 2;
 	color: #000;
@@ -574,7 +590,10 @@ figure figcaption a,
 	backface-visibility: hidden;
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-moz-transition: transform 0.4s, -moz-transform 0.4s;
 	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s;
 	opacity: 0;
 	visibility: hidden;
 }
@@ -622,6 +641,8 @@ figure figcaption a,
 
 .cards-style .awsm-flip-back-inner {
 	display: inline-block;
+	width: -webkit-calc(100% - 1px);
+	width: -moz-calc(100% - 1px);
 	width: calc(100% - 1px);
 	vertical-align: middle;
 	font-size: 14px;
@@ -633,7 +654,9 @@ figure figcaption a,
 }
 
 .cards-style.style-2 figure {
-	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
 }
 
 .cards-style.style-2 figure img {
@@ -655,13 +678,16 @@ figure figcaption a,
 	color: #000;
 	-webkit-transition: -webkit-transform 0.6s, z-index 0.7s;
 	-moz-transition: -moz-transform 0.6s, z-index 0.7s;
+	-webkit-transition: z-index 0.7s, -webkit-transform 0.6s;
+	transition: z-index 0.7s, -webkit-transform 0.6s;
+	-moz-transition: transform 0.6s, z-index 0.7s, -moz-transform 0.6s;
 	transition: transform 0.6s, z-index 0.7s;
+	transition: transform 0.6s, z-index 0.7s, -webkit-transform 0.6s, -moz-transform 0.6s;
 }
 
 .cards-style.style-2 .awsm-flip-front {
 	-moz-transform: rotateY(0deg);
 	-webkit-transform: rotateY(0deg);
-	-o-transform: rotateY(0deg);
 	-ms-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 	position: relative;
@@ -674,7 +700,6 @@ figure figcaption a,
 .cards-style.style-2 figcaption {
 	-moz-transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
 	-ms-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 	position: absolute;
@@ -692,7 +717,6 @@ figure figcaption a,
 .cards-style.style-2 figure.cs-hover .awsm-flip-front {
 	-moz-transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
 	-ms-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
@@ -701,7 +725,6 @@ figure figcaption a,
 .cards-style.style-2 figure.cs-hover figcaption {
 	-moz-transform: rotateY(0deg);
 	-webkit-transform: rotateY(0deg);
-	-o-transform: rotateY(0deg);
 	-ms-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 }
@@ -716,9 +739,10 @@ figure figcaption a,
 
 .cards-style.style-3 figure::before {
 	content: "";
-	background: rgba(255, 255, 255, 0.9);
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%); /* FF3.6-15 */
+	background: rgba(255, 255, 255, 0.9); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), color-stop(20%, rgba(255, 255, 255, 0.6)), color-stop(78%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 1)));
+	background: -moz- oldlinear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	position: absolute;
 	top: 0;
@@ -727,19 +751,24 @@ figure figcaption a,
 	left: 0;
 	-moz-transform: translateY(100%) translateY(-90px);
 	-webkit-transform: translateY(100%) translateY(-90px);
-	-o-transform: translateY(100%) translateY(-90px);
 	-ms-transform: translateY(100%) translateY(-90px);
 	transform: translateY(100%) translateY(-90px);
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-moz-transition: transform 0.4s, -moz-transform 0.4s;
 	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s;
 	z-index: 1;
 }
 
 .cards-style.style-3 figure img {
 	-webkit-transition: -webkit-transform 0.8s;
 	-moz-transition: -moz-transform 0.8s;
+	transition: -webkit-transform 0.8s;
+	-moz-transition: transform 0.8s, -moz-transform 0.8s;
 	transition: transform 0.8s;
+	transition: transform 0.8s, -webkit-transform 0.8s, -moz-transform 0.8s;
 }
 
 .cards-style.style-3 figcaption {
@@ -753,12 +782,14 @@ figure figcaption a,
 	backface-visibility: hidden;
 	-moz-transform: translateY(100%) translateY(-100px);
 	-webkit-transform: translateY(100%) translateY(-100px);
-	-o-transform: translateY(100%) translateY(-100px);
 	-ms-transform: translateY(100%) translateY(-100px);
 	transform: translateY(100%) translateY(-100px);
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-moz-transition: transform 0.4s, -moz-transform 0.4s;
 	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s;
 	text-align: center;
 	z-index: 2;
 	color: #000;
@@ -782,7 +813,10 @@ figure figcaption a,
 	backface-visibility: hidden;
 	-webkit-transition: -webkit-transform 0.4s;
 	-moz-transition: -moz-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-moz-transition: transform 0.4s, -moz-transform 0.4s;
 	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s, -moz-transform 0.4s;
 	opacity: 0;
 	visibility: hidden;
 }
@@ -822,7 +856,12 @@ figure figcaption a,
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	flex-flow: row wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	   -moz-box-orient: horizontal;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
 }
 
@@ -840,7 +879,10 @@ figure figcaption a,
 .cards-style.style-4 figure img {
 	-webkit-transition: -webkit-transform 0.5s;
 	-moz-transition: -moz-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	-moz-transition: transform 0.5s, -moz-transform 0.5s;
 	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s, -moz-transform 0.5s;
 }
 
 .cards-style.style-4 figcaption {
@@ -882,12 +924,17 @@ figure figcaption a,
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-	transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	    transform: scale(0.6);
 	-webkit-transform: scale(0.6);
 	-moz-transform: scale(0.6);
 	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, -webkit-transform 0.2s;
+	-moz-transition: transform 0.2s, opacity 0.2s, -moz-transform 0.2s;
 	transition: transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s;
 	font-size: 0;
 }
  
@@ -1249,16 +1296,22 @@ figure figcaption a,
 @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
 	.cards-style.style-1 figure::before {
 		-ms-transform: translateY(0px);
-		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		   -moz-transform: translateY(0px);
+		        transform: translateY(0px);
 		opacity: 0;
 		visibility: hidden;
+		-webkit-transition: opacity 0.4s, visibility 0.4s;
+		-moz-transition: opacity 0.4s, visibility 0.4s;
 		transition: opacity 0.4s, visibility 0.4s;
 	}
 
 	.no-touchevents .cards-style.style-1 figure:hover::before,
 	.cards-style.style-1 figure.cs-hover::before {
 		-ms-transform: translateY(0px);
-		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		   -moz-transform: translateY(0px);
+		        transform: translateY(0px);
 		opacity: 1;
 		visibility: visible;
 	}
@@ -1267,7 +1320,11 @@ figure figcaption a,
 	.cards-style.style-2 figcaption {
 		-webkit-transition: -webkit-transform 0.6s, z-index 0.7s;
 		-moz-transition: -moz-transform 0.6s, z-index 0.7s;
+		-webkit-transition: z-index 0.7s, -webkit-transform 0.6s;
+		transition: z-index 0.7s, -webkit-transform 0.6s;
+		-moz-transition: transform 0.6s, z-index 0.7s, -moz-transform 0.6s;
 		transition: transform 0.6s, z-index 0.7s;
+		transition: transform 0.6s, z-index 0.7s, -webkit-transform 0.6s, -moz-transform 0.6s;
 		-webkit-backface-visibility: visible;
 		-moz-backface-visibility: visible;
 		backface-visibility: visible;
@@ -1300,3 +1357,4 @@ figure figcaption a,
 :root .cards-style.style-2 figure:hover figcaption {
 	z-index: 3;
 }
+/*# sourceMappingURL=team.css.map */

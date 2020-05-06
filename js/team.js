@@ -17,3 +17,4 @@
 		$('.awsm-grid-wrapper').addClass('no-touchevents');
 	}
 })(jQuery);
+//# sourceMappingURL=team.js.map
