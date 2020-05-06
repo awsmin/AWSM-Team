@@ -15,16 +15,16 @@ if (!defined('ABSPATH')) {
 }
 // if direct access
 
-if (!class_exists('Awsm_team_lite')): 
+if (!class_exists('Awsm_team_lite')):
 /**
  * Team main class
  * author : AWSM
- */ 
+ */
     class Awsm_team_lite
     {
         private static $instance = null;
         private $settings;
-        
+
         /**
          * Creates or returns an instance of this class.
          * @since    1.0.0
@@ -76,7 +76,7 @@ if (!class_exists('Awsm_team_lite')):
          * @since: 1.0
          */
         function custom_css(){
-            global $wp_query;   
+            global $wp_query;
             $posts = $wp_query->posts;
             $pattern  = '(awsmteam)(?![\w-])([^\]\/]*(?:\/(?!\])[^\]\/]*)*?)(?:(\/)\]|\](?:([^\[]*+(?:\[(?!\/\2\])[^\[]*+)*+)\[\/\2\])?)(\]?)';
             $snippet = '';
@@ -99,8 +99,8 @@ if (!class_exists('Awsm_team_lite')):
                                     $snippet.= $custom_css;
                                 }
                             }
-                            
-                        }   
+
+                        }
                     }
                 }
                 if($snippet){
@@ -157,7 +157,7 @@ if (!class_exists('Awsm_team_lite')):
         {
             wp_enqueue_script('awsm-team', plugins_url('js/team.min.js', $this->settings['plugin_file']), array(
                 'jquery'
-            ), $this->settings['plugin_version'], true); 
+            ), $this->settings['plugin_version'], true);
             wp_enqueue_style('awsm-team', plugins_url('css/team.min.css', $this->settings['plugin_file']), false, $this->settings['plugin_version'], 'all');
         }
         /**
@@ -247,7 +247,7 @@ if (!class_exists('Awsm_team_lite')):
                 add_filter('manage_awsm_team_member_posts_columns' , array( $this, 'custom_columns_member' ));
                 add_action('manage_awsm_team_member_posts_custom_column' , array( $this, 'custom_columns_member_data' ) , 10, 2 );
                 add_filter('manage_awsm_team_posts_columns' , array( $this, 'custom_columns_team' ));
-                add_action('manage_awsm_team_posts_custom_column' , array( $this, 'custom_columns_team_data' ) , 10, 2 );  
+                add_action('manage_awsm_team_posts_custom_column' , array( $this, 'custom_columns_team_data' ) , 10, 2 );
                 add_filter('admin_post_thumbnail_html', array($this,'image_help'));
                 add_filter('admin_post_thumbnail_size',  array($this,'custom_admin_thumb_size'));
             }
@@ -261,7 +261,7 @@ if (!class_exists('Awsm_team_lite')):
             if($post_type == 'awsm_team_member'){
                 $thumb_size = "awsm_team";
             }
-            return $thumb_size; 
+            return $thumb_size;
         }
         /**
          * Image size help text
@@ -369,7 +369,7 @@ if (!class_exists('Awsm_team_lite')):
                 wp_enqueue_style('awsm-team-icomoon-css', plugins_url('css/icomoon.css', $this->settings['plugin_file']), false, $this->settings['plugin_version'], 'all');
                }
             }
-            
+
         }
         /**
          * Adding submenu items
@@ -469,7 +469,7 @@ if (!class_exists('Awsm_team_lite')):
                     } elseif (empty($newdata) && $olddata) {
                         delete_post_meta($post_id, $key, $olddata);
                     }
-                    
+
                 }
             } elseif ($post->post_type == 'awsm_team') {
                 $team_meta = array('memberlist', 'team-style', 'preset', 'columns', 'custom_css');
@@ -530,11 +530,11 @@ if (!class_exists('Awsm_team_lite')):
         public function get_options($postype, $post_id)
         {
             $post = get_post($post_id);
-            
+
             if (!$post) {
                 return false;
             }
-            
+
             $metakeys['awsm_team_member'] = array(
                 'awsm_social',
                 'awsm-team-designation',
@@ -610,7 +610,7 @@ if (!class_exists('Awsm_team_lite')):
         }
         /**
          * ID generator
-         * @param  Array $id 
+         * @param  Array $id
          * @since   1.0
          */
         public function add_id($id)
@@ -629,7 +629,7 @@ if (!class_exists('Awsm_team_lite')):
                 } else {
                     echo sprintf($template, $value);
                 }
-                
+
             }
         }
     }
@@ -647,9 +647,9 @@ function awms_team__disable_self(){
 function awms_team_disable_notice(){
     $class = 'notice is-dismissible notice-warning';
     $message = __( 'Thanks for upgrading AWSM Team Pro! The free version ‘AWSM Team’ has now been deactivated.', 'awsm-team' );
-    printf( '<div class="%1$s"><p>%2$s</p></div>', $class, $message ); 
+    printf( '<div class="%1$s"><p>%2$s</p></div>', $class, $message );
 }
 // Plugin activation hook
 add_action( 'plugins_loaded', 'awms_team_activation' );
 add_action( 'admin_init', 'awms_team__disable_self' );
-endif;  
+endif;
