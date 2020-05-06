@@ -285,7 +285,7 @@ if (!class_exists('Awsm_team_lite')):
             $columns = array(
                 'cb' => '<input type="checkbox" />',
                 'title' => __('Name','awsm-team'),
-                'featured_image' => __('Photo','awsm-team'),
+                'member_image' => __('Photo','awsm-team'),
                 'designation' => __('Designation','awsm-team'),
                 'date' => 'Date'
              );
@@ -298,7 +298,7 @@ if (!class_exists('Awsm_team_lite')):
         function custom_columns_member_data($column,$post_ID){
             $options = $this->get_options('awsm_team_member',$post_ID );
             switch ( $column ) {
-            case 'featured_image':
+            case 'member_image':
                 echo the_post_thumbnail( 'thumbnail' );
                 break;
             case 'designation':
