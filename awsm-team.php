@@ -197,6 +197,7 @@ if (!class_exists('Awsm_team_lite')):
                     'title',
                     'editor',
 					'thumbnail',
+					'custom-fields',
                 ),
 				'menu_icon' => 'dashicons-admin-users',
 				'show_in_rest' => true,
