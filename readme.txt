@@ -53,6 +53,9 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Changelog ==
 
+= V 1.2.1 - 2020-07-07 =
+* Fixed: Conflict with NextGEN Gallery plugin that prevents a user from adding or editing member details in Gutenberg.
+
 = V 1.2.0 - 2020-05-06 =
 * Added: Gutenberg support for Team Members.
 * Added: New icons in Links for members.
@@ -76,5 +79,5 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Upgrade Notice ==
 
-= 1.2.0 =
-Added New Features and Bug Fixes
+= 1.2.1 =
+Bug Fixes

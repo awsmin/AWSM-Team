@@ -38,103 +38,103 @@ msgstr ""
 msgid "Add New Member"
 msgstr ""
 
-#: awsm-team.php:180, awsm-team.php:215
+#: awsm-team.php:180, awsm-team.php:216
 msgid "Add %s"
 msgstr ""
 
-#: awsm-team.php:181, awsm-team.php:216
+#: awsm-team.php:181, awsm-team.php:217
 msgid "New %s"
 msgstr ""
 
-#: awsm-team.php:182, awsm-team.php:217
+#: awsm-team.php:182, awsm-team.php:218
 msgid "Edit %s"
 msgstr ""
 
-#: awsm-team.php:183, awsm-team.php:218
+#: awsm-team.php:183, awsm-team.php:219
 msgid "View %s"
 msgstr ""
 
-#: awsm-team.php:184, awsm-team.php:317, includes/team-details.php:7
+#: awsm-team.php:184, awsm-team.php:318, includes/team-details.php:7
 msgid "Members"
 msgstr ""
 
-#: awsm-team.php:185, awsm-team.php:220
+#: awsm-team.php:185, awsm-team.php:221
 msgid "Search %s"
 msgstr ""
 
-#: awsm-team.php:186, awsm-team.php:221
+#: awsm-team.php:186, awsm-team.php:222
 msgid "No %s found"
 msgstr ""
 
-#: awsm-team.php:187, awsm-team.php:222
+#: awsm-team.php:187, awsm-team.php:223
 msgid "No %s found in trash"
 msgstr ""
 
-#: awsm-team.php:191, awsm-team.php:226
+#: awsm-team.php:191, awsm-team.php:227
 msgid "This is where you can create and manage %s."
 msgstr ""
 
-#: awsm-team.php:208
+#: awsm-team.php:209
 msgid "Team"
 msgstr ""
 
-#: awsm-team.php:209, awsm-team.php:219
+#: awsm-team.php:210, awsm-team.php:220
 msgid "Teams"
 msgstr ""
 
-#: awsm-team.php:213
+#: awsm-team.php:214
 msgid "Awsm Team"
 msgstr ""
 
-#: awsm-team.php:214, awsm-team.php:381, awsm-team.php:381
+#: awsm-team.php:215, awsm-team.php:382, awsm-team.php:382
 msgid "Add Team"
 msgstr ""
 
-#: awsm-team.php:275
+#: awsm-team.php:276
 msgid "Please upload square-cropped photos with a minimum dimension of 500px"
 msgstr ""
 
-#: awsm-team.php:287, awsm-team.php:316, templates/table.php:9
+#: awsm-team.php:288, awsm-team.php:317, templates/table.php:9
 msgid "Name"
 msgstr ""
 
-#: awsm-team.php:288
+#: awsm-team.php:289
 msgid "Photo"
 msgstr ""
 
-#: awsm-team.php:289, includes/member-details.php:3, templates/table.php:12
+#: awsm-team.php:290, includes/member-details.php:3, templates/table.php:12
 msgid "Designation"
 msgstr ""
 
-#: awsm-team.php:318
+#: awsm-team.php:319
 msgid "Preset"
 msgstr ""
 
-#: awsm-team.php:319, includes/team-details.php:91
+#: awsm-team.php:320, includes/team-details.php:91
 msgid "Style"
 msgstr ""
 
-#: awsm-team.php:320, awsm-team.php:353
+#: awsm-team.php:321, awsm-team.php:354
 msgid "Shortcode"
 msgstr ""
 
-#: awsm-team.php:353
+#: awsm-team.php:354
 msgid "Copy"
 msgstr ""
 
-#: awsm-team.php:389
+#: awsm-team.php:390
 msgid "Member Details"
 msgstr ""
 
-#: awsm-team.php:390
+#: awsm-team.php:391
 msgid "Team Details"
 msgstr ""
 
-#: awsm-team.php:391
+#: awsm-team.php:392
 msgid "Upgrade to AWSM Team Pro"
 msgstr ""
 
-#: awsm-team.php:664
+#: awsm-team.php:665
 msgid "Thanks for upgrading AWSM Team Pro! The free version ‘AWSM Team’ has now been deactivated."
 msgstr ""
 
