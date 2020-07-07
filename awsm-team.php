@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: AWSM Team
-Plugin URI: http://awsm.in/team-pro-documentation
+Plugin URI: https://docs.awsm.in/team-pro-documentation
 Description: The most versatile plugin to create and manage your Team page. Packed with 8 unique presets and number of styles to choose from.
 Version: 1.2.1
 Author: AWSM Innovations
