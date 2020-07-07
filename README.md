@@ -4,7 +4,7 @@
 **Tags:** team, team page, team members, team builder, team shortcode, team layout, team plugin, members, users  
 **Requires at least:** 4.0  
 **Tested up to:** 5.4  
-**Stable tag:** 1.2.0  
+**Stable tag:** 1.2.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -47,6 +47,9 @@ The lite version comes with 3 presets and a number of style options. You can cre
 2. Activate the plugin through the `Plugins` screen in WordPress
 
 ## Changelog
+
+**V 1.2.1 - 2020-07-07**
+* Fixed: Conflict with NextGEN Gallery plugin that prevents a user from adding or editing member details in Gutenberg.
 
 **V 1.2.0 - 2020-05-06**
 * Added: Gutenberg support for Team Members.
