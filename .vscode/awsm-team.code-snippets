@@ -1,0 +1,26 @@
+{
+    "AWSM Team: Error Log": {
+		"scope": "php",
+		"prefix": "teaml:log",
+		"body": [
+			"error_log( json_encode( $1 ) );"
+		],
+		"description": "Error log function"
+	},
+	"AWSM Team: Translation": {
+		"scope": "php",
+		"prefix": "teaml:_",
+		"body": [
+			"__( '$1', 'awsm-team' )"
+		],
+		"description": "Translation function"
+	},
+	"AWSM Team: Translation Extended": {
+		"scope": "php",
+		"prefix": "teaml:__",
+		"body": [
+			"esc_html__( '$1', 'awsm-team' )"
+		],
+		"description": "Translation function extended"
+	},
+}

@@ -1,0 +1,16 @@
+{
+    "name": "awsm/team",
+    "description": "The most versatile plugin to create and manage your Team page. Packed with 8 unique presets and number of styles to choose from.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "squizlabs/php_codesniffer": "3.*",
+        "wp-coding-standards/wpcs": "^2.0",
+        "phpcompatibility/phpcompatibility-wp": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+    },
+    "scripts": {
+        "phpcs": "phpcs --colors -p -s",
+        "phpcbf": "phpcbf --colors -p -s"
+    }
+}
