@@ -284,11 +284,6 @@
     -webkit-margin-end: 0;
 }
 
-html.awsm-popup-on{
-    height: 100%;
-    overflow: hidden;
-}
-
 .awsm-personal-info,
 .awsm-contact-info,
 .awsm-flip-front,
@@ -443,8 +438,6 @@ figcaption p {
 }
 
 figure figcaption a,
-.awsm-popup-details a,
-.awsm-popup-items a,
 .drawer-style a {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -516,13 +509,6 @@ figure figcaption a,
 @media (max-width:992px) {
     .awsm-grid-wrapper .awsm-grid > .awsm-grid-card {
         width: 50%;
-    }
-
-}
-
-@media (max-width:830px) {
-    .awsm-popup-on body {
-        overflow: auto;
     }
 
 }
@@ -943,7 +929,7 @@ figure figcaption a,
 	transform: scale(1.05);
 }
 
- 
+
 
 .drawer-style.style-1 figcaption {
 	position: absolute;
@@ -972,7 +958,7 @@ figure figcaption a,
 	transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s, -moz-transform 0.2s;
 	font-size: 0;
 }
- 
+
 /*------------- List 4-----------*/
 .list-style figure img {
 	max-width: 300px;
@@ -1051,7 +1037,7 @@ figure figcaption a,
 	float: right;
 	margin-left: 30px;
 }
- 
+
 
 /*------------ Table 1 -----------*/
 .awsm-table {
@@ -1320,7 +1306,7 @@ figure figcaption a,
 }
 
 @media screen and (max-width:650px) {
-	 
+
 	.awsm-personal-details{
 		max-height: 100%;
 		overflow: visible;
@@ -1392,3 +1378,4 @@ figure figcaption a,
 :root .cards-style.style-2 figure:hover figcaption {
 	z-index: 3;
 }
+/*# sourceMappingURL=team.css.map */

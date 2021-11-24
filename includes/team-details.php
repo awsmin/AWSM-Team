@@ -1,11 +1,22 @@
+<?php
+/**
+ * Team Details Meta.
+ *
+ * @package awsm-team
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+?>
 <div class="wrap">
 			<div class="awsm-team-customize">
 			<!-- <h2 class="awsm-sub-heading"></h2> -->
 			<div class="awsm-team-customize-inner">
 				<div class="awsm-team-customize-member">
 					<div class="awsm-heading-group">
-						<h2 class="sub-h"><?php _e( 'Members', 'awsm-team' ); ?></h2>
-						<span><?php _e( 'Select members from the dropdown, drag and drop them to reorder.', 'awsm-team' ); ?></span>
+						<h2 class="sub-h"><?php esc_html_e( 'Members', 'awsm-team' ); ?></h2>
+						<span><?php esc_html_e( 'Select members from the dropdown, drag and drop them to reorder.', 'awsm-team' ); ?></span>
 					</div>
 					<div class="awsm-select-members">
 						<?php
@@ -13,14 +24,14 @@
 							?>
 						<select name="members" id="awsm-members">
 							<?php
-							echo '<option value="" data-img="' . $defaultimage . '">' . _e( 'Select a member', 'awsm-team' ) . '</option>';
+							echo '<option value="" data-img="' . esc_attr( $defaultimage ) . '">' . esc_html_e( 'Select a member', 'awsm-team' ) . '</option>';
 							while ( $members->have_posts() ) :
 								$members->the_post();
 								$disabled = '';
 								if ( in_array( $members->post->ID, $options['memberlist'] ) ) {
 									$disabled = 'disabled';
 								}
-								echo '<option value="' . $members->post->ID . '" data-img="' . $this->team_thumbnail( $members->post->ID, 'thumbnail' ) . '" ' . $disabled . '>' . get_the_title() . '</option>';
+								echo '<option value="' . esc_attr( $members->post->ID ) . '" data-img="' . esc_attr( $this->team_thumbnail( $members->post->ID, 'thumbnail' ) ) . '" ' . esc_attr( $disabled ) . '>' . esc_html( get_the_title() ) . '</option>';
 							endwhile;
 							wp_reset_postdata();
 							?>
@@ -29,14 +40,14 @@
 						else :
 							$addmember = admin_url( 'post-new.php?post_type=awsm_team_member' );
 							echo '<p>';
-							_e( 'You haven’t added any team members yet. ', 'awsm-team' );
-							echo '<a href="' . $addmember . '">' . __( 'Add a team member', 'awsm-team' ) . '</a>';
+							esc_html_e( 'You haven’t added any team members yet. ', 'awsm-team' );
+							echo '<a href="' . esc_url( $addmember ) . '">' . esc_html__( 'Add a team member', 'awsm-team' ) . '</a>';
 							echo '</p>';
 						endif;
 						?>
 					</div><!-- .awsm-select-members -->
 					<ul class="awsm-members-list-selected">
-						<div class="awsm-members-info">No Members Selected</div>
+						<div class="awsm-members-info"><?php esc_html_e( 'No Members Selected', 'awsm-team' ); ?></div>
 						<script type="text/html" id="tmpl-awsm-member-list">
 						   <li data-member-id="{{{data.id}}}" class="">
 							<img width="31" height="31" src="{{{data.src}}}"/>
@@ -57,10 +68,10 @@
 								while ( $team->have_posts() ) :
 									$team->the_post();
 									?>
-								   <li data-member-id="<?php echo $team->post->ID; ?>" class="">
-									<img width="31" height="31" src="<?php echo $this->team_thumbnail( $team->post->ID, 'thumbnail' ); ?>"/>
-									<p><?php the_title(); ?></p><span class="remove-member-to-list" data-member="<?php echo $team->post->ID; ?>"><i class="awsm-icon-close"></i></span>
-									<input type="hidden" name="memberlist[]" value="<?php echo $team->post->ID; ?>">
+								   <li data-member-id="<?php echo esc_attr( $team->post->ID ); ?>" class="">
+									<img width="31" height="31" src="<?php echo esc_url( $this->team_thumbnail( $team->post->ID, 'thumbnail' ) ); ?>"/>
+									<p><?php the_title(); ?></p><span class="remove-member-to-list" data-member="<?php echo esc_attr( $team->post->ID ); ?>"><i class="awsm-icon-close"></i></span>
+									<input type="hidden" name="memberlist[]" value="<?php echo esc_attr( $team->post->ID ); ?>">
 									</li>
 									<?php
 								endwhile;
@@ -72,8 +83,8 @@
 				</div><!-- .awsm-team-customize-member -->
 				<div class="awsm-team-customize-style">
 					<div class="awsm-heading-group">
-						<h2 class="sub-h"><?php echo __( 'Presets', 'awsm-team' ); ?></h2>
-						<span><?php echo __( 'Choose a preset from below.', 'awsm-team' ); ?></span>
+						<h2 class="sub-h"><?php esc_html_e( 'Presets', 'awsm-team' ); ?></h2>
+						<span><?php esc_html_e( 'Choose a preset from below.', 'awsm-team' ); ?></span>
 					</div>
 					<div class="awsm-preset-list awsm-clearfix">
 								<?php
@@ -90,20 +101,21 @@
 								foreach ( $styles as $key => $set ) :
 									$val = strtolower( $key );
 									?>
-								<input class="awsm-radio-hidden" id="rad-<?php echo $val; ?>" type="radio" data-style="<?php echo $set[0]; ?>" data-column="<?php echo $set[1]; ?>" name="team-style" value="<?php echo $val; ?>" <?php checked( $val, $options['team-style'] ); ?><?php echo ! $set[2] ? ' disabled' : ''; ?>>
-								<label for="rad-<?php echo $val; ?>" class="<?php echo ! $set[2] ? 'awsm_pro_feature' : ''; ?>"><img src="<?php echo $this->settings['plugin_url'] . '/images/' . $val . '.jpg'; ?>">
-									<span data-type="<?php echo $val; ?>"><?php echo $key; ?></span>
+								<input class="awsm-radio-hidden" id="rad-<?php echo esc_attr( $val ); ?>" type="radio" data-style="<?php echo esc_attr( $set[0] ); ?>" data-column="<?php echo esc_attr( $set[1] ); ?>" name="team-style" value="<?php echo esc_attr( $val ); ?>" <?php checked( $val, $options['team-style'] ); ?><?php echo ! $set[2] ? ' disabled' : ''; ?>>
+								<label for="rad-<?php echo esc_attr( $val ); ?>" class="<?php echo ! $set[2] ? 'awsm_pro_feature' : ''; ?>"><img src="<?php echo esc_url( $this->settings['plugin_url'] . '/images/' . $val . '.jpg' ); ?>">
+									<span data-type="<?php echo esc_attr( $val ); ?>"><?php echo esc_html( $key ); ?></span>
 								</label>
 							<?php endforeach; ?>
 					</div><!-- .awsm-preset-list -->
 					<div class="awsm-section awsm-clearfix">
 							<div class="awsm-heading-group">
-								<h2 class="sub-h"><?php echo __( 'Style', 'awsm-team' ); ?></h2>
+								<h2 class="sub-h"><?php esc_html_e( 'Style', 'awsm-team' ); ?></h2>
 								<span>
 								<?php
-									$url = 'http://dev.awsm.in/team/wp-demo/';
+									$url = 'https://demo.awsm.in/team-pro/';
 									printf(
 										wp_kses(
+											/* translators: %s: Team demo link */
 											__( 'We have a set of predefined styles for each preset. Choose your favorite. Refer <a href="%s" target="_blank">demo</a>.', 'awsm-team' ),
 											array(
 												'a' => array(
@@ -144,10 +156,10 @@
 					</div><!-- .awsm-row -->
 					<div class="awsm-custom-css-wrap">
 						<div class="awsm-heading-group">
-							<h2 class="sub-h"><?php echo __( 'Custom CSS', 'awsm-team' ); ?></h2>
-							<span><?php echo __( 'Want to add your own colours and flavours? Add your custom CSS in the text box below.', 'awsm-team' ); ?></span>
+							<h2 class="sub-h"><?php esc_html_e( 'Custom CSS', 'awsm-team' ); ?></h2>
+							<span><?php esc_html_e( 'Want to add your own colours and flavours? Add your custom CSS in the text box below.', 'awsm-team' ); ?></span>
 						</div><!-- .awsm-heading-group -->
-						<textarea name="custom_css"><?php echo $options['custom_css']; ?></textarea>
+						<textarea name="custom_css"><?php echo esc_textarea( $options['custom_css'] ); ?></textarea>
 					</div>
 				</div><!-- .awsm-team-customize-style -->
 				<div class="awsm-clearfix"></div>

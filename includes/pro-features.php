@@ -1,3 +1,14 @@
+<?php
+/**
+ * Pro features meta.
+ *
+ * @package awsm-team
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+?>
 <div class="awsm-team-right-inner awsm-team-upgrade-msg">
 	<h3>Upgrade to AWSM Team Pro for more cool features</h3>
 	<ul class="awsm-team-upgrade-list">
@@ -10,6 +21,6 @@
 		<li><strong>Customer Support</strong>
 			<br>Premium Chat and Email Support</li>
 	</ul>
-	<a class="awsm-team-btn-upgrade" href="http://goo.gl/A8Rmxn" target="_blank"><?php _e( 'Upgrade Now', 'awsm-team' ); ?></a>
-	<p><?php _e( 'Lifetime license. Unlimited updates.', 'awsm-team' ); ?></p>
+	<a class="awsm-team-btn-upgrade" href="https://1.envato.market/team" target="_blank"><?php esc_html_e( 'Upgrade Now', 'awsm-team' ); ?></a>
+	<p><?php esc_html_e( 'Lifetime license. Unlimited updates.', 'awsm-team' ); ?></p>
 </div>
