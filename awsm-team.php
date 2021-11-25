@@ -715,6 +715,19 @@ if ( ! class_exists( 'Awsm_Team_Lite' ) ) :
 		}
 
 		/**
+		 * Get team thumbnail.
+		 *
+		 * @since 1.0.0
+		 * @param int    $team_id Post id of team.
+		 * @param string $thumbnail thumbnail size.
+		 */
+		public function get_team_thumbnail( $team_id, $thumbnail = 'awsm_team' ) {
+			$defaultimage = '<img src="' . $this->settings['plugin_url'] . 'images/default-user.png" alt="' . esc_attr( get_the_title( $team_id ) ) . '">';
+			$member_image = ( has_post_thumbnail( $team_id ) ) ? get_the_post_thumbnail( $team_id, $thumbnail ) : $defaultimage;
+			return $member_image;
+		}
+
+		/**
 		 * Item styling class name generator.
 		 *
 		 * @since 1.0.0

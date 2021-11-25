@@ -564,7 +564,7 @@ figure figcaption a,
 	transition: transform 0.8s, -webkit-transform 0.8s, -moz-transform 0.8s;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
-	max-width: 160px;
+	max-width: 160px !important;
 	margin: 0 auto;
 	display: block;
 }
@@ -683,7 +683,7 @@ figure figcaption a,
 .cards-style.style-2 figure img {
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
-	max-width: 160px;
+	max-width: 160px !important;
 	margin: 0 auto;
 	display: block;
 }
@@ -961,7 +961,7 @@ figure figcaption a,
 
 /*------------- List 4-----------*/
 .list-style figure img {
-	max-width: 300px;
+	max-width: 300px !important;
 }
 
 .awsm-grid.list-style figcaption {

@@ -22,10 +22,11 @@ if ( in_array( $options['preset'], array( 'style-2' ) ) ) {
 			?>
 				<div id="<?php echo esc_attr( $this->add_id( array( 'awsm-member', $id, $team->post->ID ) ) ); ?>" class="awsm-grid-card">
 				   <figure>
-					  <!-- <span class="awsm-grid-holder"> -->
-						<?php $this->checkprint( '<div class="awsm-flip-front">', $flip ); ?>
-						 <img src="<?php echo esc_url( $this->team_thumbnail( $team->post->ID ) ); ?>" alt="<?php the_title(); ?>">
-						<?php $this->checkprint( '</div>', $flip ); ?>
+						<?php
+							$this->checkprint( '<div class="awsm-flip-front">', $flip );
+							echo $this->get_team_thumbnail( $team->post->ID ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							$this->checkprint( '</div>', $flip );
+						?>
 						 <figcaption class="<?php echo esc_attr( $this->addclass( $flipclass ) ); ?>">
 							<?php $this->checkprint( '<div class="awsm-flip-back-inner">', $flip ); ?>
 							<div class="awsm-personal-info">
@@ -41,7 +42,6 @@ if ( in_array( $options['preset'], array( 'style-2' ) ) ) {
 							<?php $this->checkprint( '</div><!-- .awsm-flip-back-inner -->', $flip ); ?>
 						 </figcaption>
 					  <!-- </span> -->
-					  <!-- .awsm-grid-holder -->
 				   </figure>
 				</div>
 			<?php

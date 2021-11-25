@@ -16,8 +16,7 @@
 			?>
 				<div id="<?php echo esc_attr( $this->add_id( array( 'awsm-member', $id, $team->post->ID ) ) ); ?>" class="awsm-grid-card">
 				   <figure>
-					  <!-- <span class="awsm-grid-holder"> -->
-						 <img src="<?php echo esc_url( $this->team_thumbnail( $team->post->ID ) ); ?>" alt="<?php the_title(); ?>">
+						 <?php echo $this->get_team_thumbnail( $team->post->ID ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						 <figcaption>
 							<div class="awsm-personal-info">
 							   <h3><?php the_title(); ?></h3>
@@ -31,7 +30,6 @@
 							</div> <!-- .awsm-contact-info -->
 						 </figcaption>
 					  <!-- </span> -->
-					  <!-- .awsm-grid-holder -->
 				   </figure>
 				</div>
 			<?php

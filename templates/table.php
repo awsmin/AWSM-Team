@@ -34,7 +34,7 @@
 		<div id="<?php echo esc_attr( $this->add_id( array( 'awsm-member', $id, $team->post->ID ) ) ); ?>" class="awsm-table-row">
 			<div class="awsm-table-cell awsm-table-image">
 				<div class="awsm-table-img-holder">
-					<img src="<?php echo esc_url( $this->team_thumbnail( $team->post->ID ) ); ?>" alt="<?php the_title(); ?>">
+					<?php echo $this->get_team_thumbnail( $team->post->ID ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</div><!-- .awsm-img-holder -->
 			</div><!-- .awsm-table-cell -->
 			<div class="awsm-table-cell awsm-table-name">
