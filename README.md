@@ -1,10 +1,10 @@
 [![AWSM Team](https://ps.w.org/awsm-team/assets/banner-772x250.png)](https://wordpress.org/plugins/awsm-team/)
-# AWSM Team
+# AWSM Team - Team Showcase Plugin
 **Contributors:** awsmin  
 **Tags:** team, team page, team members, team builder, team shortcode, team layout, team plugin, members, users  
 **Requires at least:** 4.0  
-**Tested up to:** 5.4  
-**Stable tag:** 1.2.1  
+**Tested up to:** 5.8  
+**Stable tag:** 1.3.0  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -47,6 +47,12 @@ The lite version comes with 3 presets and a number of style options. You can cre
 2. Activate the plugin through the `Plugins` screen in WordPress
 
 ## Changelog
+
+**V 1.3.0 - 2021-11-25**
+* Added: Native lazy loading support for member images.
+* Improved: Cards preset styles.
+* Code improvements based on WordPress coding standards.
+* Other minor bug fixes.
 
 **V 1.2.1 - 2020-07-07**
 * Fixed: Conflict with NextGEN Gallery plugin that prevents a user from adding or editing member details in Gutenberg.

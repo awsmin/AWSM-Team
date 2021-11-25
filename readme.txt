@@ -1,8 +1,8 @@
-=== AWSM Team ===
+=== AWSM Team - Team Showcase Plugin ===
 Contributors: awsmin
 Tags: team, team page, team members, team builder, team shortcode, team layout, team plugin, members, users
 Requires at least: 4.0
-Tested up to: 5.4
+Tested up to: 5.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,6 +53,12 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Changelog ==
 
+= V 1.3.0 - 2021-11-25 =
+* Added: Native lazy loading support for member images.
+* Improved: Cards preset styles.
+* Code improvements based on WordPress coding standards.
+* Other minor bug fixes.
+
 = V 1.2.1 - 2020-07-07 =
 * Fixed: Conflict with NextGEN Gallery plugin that prevents a user from adding or editing member details in Gutenberg.
 
@@ -79,5 +85,5 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Upgrade Notice ==
 
-= 1.2.1 =
-Bug Fixes
+= 1.3.0 =
+Improvements and bug fixes
