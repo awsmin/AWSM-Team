@@ -160,29 +160,38 @@ if ( ! class_exists( 'Awsm_Team_Lite' ) ) :
 				$atts,
 				'awsmteam'
 			);
-			$id             = $shortcode_atts['id'];
-			$options        = $this->get_options( 'awsm_team', $id );
+		
+			$id = intval($shortcode_atts['id']); // Sanitize the ID to an integer
+			
+			$options = $this->get_options( 'awsm_team', $id );
 			if ( ! $options ) {
 				return '<div class="awsm-team-error">' . esc_html__( 'Team not found', 'awsm-team' ) . '</div>';
 			}
 			if ( empty( $options['memberlist'] ) ) {
 				return '<div class="awsm-team-error">' . esc_html__( 'No members found', 'awsm-team' ) . '</div>';
 			}
-			$template = $this->settings['plugin_path'] . 'templates/' . $options['team-style'] . '.php';
-			if ( file_exists( $template ) ) {
+			
+			// Sanitize and validate the team style option
+			$team_style = sanitize_file_name($options['team-style']); 
+			$template = $this->settings['plugin_path'] . 'templates/' . $team_style . '.php';
+		
+			if ( file_exists( $template ) && strpos(realpath($template), realpath($this->settings['plugin_path'] . 'templates/')) === 0 ) {
 				ob_start();
 				$teamargs = array(
 					'orderby'        => 'post__in',
 					'post_type'      => 'awsm_team_member',
-					'post__in'       => $options['memberlist'],
+					'post__in'       => array_map('intval', $options['memberlist']), // Sanitize member list
 					'posts_per_page' => -1,
 				);
-				$team     = new WP_Query( $teamargs );
+				$team = new WP_Query( $teamargs );
 				include $template;
 				wp_reset_postdata();
 				return ob_get_clean();
+			} else {
+				return '<div class="awsm-team-error">' . esc_html__( 'Template not found', 'awsm-team' ) . '</div>';
 			}
 		}
+		
 
 		/**
 		 * Register front scripts
