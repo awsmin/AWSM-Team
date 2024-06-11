@@ -169,12 +169,12 @@ if ( ! class_exists( 'Awsm_Team_Lite' ) ) :
 				return '<div class="awsm-team-error">' . esc_html__( 'No members found', 'awsm-team' ) . '</div>';
 			}
 
-			// Define a whitelist of allowed template styles
-			$allowed_styles = ['cards', 'list', 'table'];
+			// Define a whitelist of allowed template styles.
+			$allowed_styles = array( 'cards', 'list', 'table' );
 
-			// Sanitize and validate the team-style option
-			$team_style = preg_replace('/[^a-zA-Z0-9_-]/', '', $options['team-style']);
-		
+			// Sanitize and validate the team-style option.
+			$team_style = preg_replace( '/[^a-zA-Z0-9_-]/', '', $options['team-style'] );
+
 			if ( ! in_array( $team_style, $allowed_styles ) ) {
 				return '<div class="awsm-team-error">' . esc_html__( 'Invalid team style', 'awsm-team' ) . '</div>';
 			}
