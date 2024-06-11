@@ -1,4 +1,4 @@
-# Copyright (C) 2021 AWSM Team
+# Copyright (C) 2024 AWSM Team
 # This file is distributed under the same license as the AWSM Team package.
 msgid ""
 msgstr ""
@@ -7,6 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language-Team: AWSM innovations <hello@awsm.in>\n"
+"POT-Creation-Date: 2024-06-11 05:47+0000\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -22,135 +23,131 @@ msgstr ""
 msgid "No members found"
 msgstr ""
 
-#: awsm-team.php:215
+#: awsm-team.php:179
+msgid "Invalid team style"
+msgstr ""
+
+#: awsm-team.php:226
 msgid "Team Member"
 msgstr ""
 
-#: awsm-team.php:216
+#: awsm-team.php:227
 msgid "Team Members"
 msgstr ""
 
-#: awsm-team.php:220
+#: awsm-team.php:231
 msgid "AWSM Team"
 msgstr ""
 
-#: awsm-team.php:221
+#: awsm-team.php:232
 msgid "Add New Member"
 msgstr ""
 
 #. translators: %s: singular term
-#. translators: %s: singular term
-#: awsm-team.php:223, awsm-team.php:267
+#: awsm-team.php:234, awsm-team.php:278
 msgid "Add %s"
 msgstr ""
 
 #. translators: %s: singular term
-#. translators: %s: singular term
-#: awsm-team.php:225, awsm-team.php:269
+#: awsm-team.php:236, awsm-team.php:280
 msgid "New %s"
 msgstr ""
 
 #. translators: %s: singular term
-#. translators: %s: singular term
-#: awsm-team.php:227, awsm-team.php:271
+#: awsm-team.php:238, awsm-team.php:282
 msgid "Edit %s"
 msgstr ""
 
 #. translators: %s: singular term
-#. translators: %s: singular term
-#: awsm-team.php:229, awsm-team.php:273
+#: awsm-team.php:240, awsm-team.php:284
 msgid "View %s"
 msgstr ""
 
-#: awsm-team.php:230, awsm-team.php:401, includes/team-details.php:18
+#: awsm-team.php:241, awsm-team.php:412, includes/team-details.php:18
 msgid "Members"
 msgstr ""
 
 #. translators: %s: plural term
-#. translators: %s: plural term
-#: awsm-team.php:232, awsm-team.php:276
+#: awsm-team.php:243, awsm-team.php:287
 msgid "Search %s"
 msgstr ""
 
 #. translators: %s: plural term
-#. translators: %s: plural term
-#: awsm-team.php:234, awsm-team.php:278
+#: awsm-team.php:245, awsm-team.php:289
 msgid "No %s found"
 msgstr ""
 
 #. translators: %s: plural term
-#. translators: %s: plural term
-#: awsm-team.php:236, awsm-team.php:280
+#: awsm-team.php:247, awsm-team.php:291
 msgid "No %s found in trash"
 msgstr ""
 
 #. translators: %s: plural term
-#. translators: %s: plural term
-#: awsm-team.php:241, awsm-team.php:285
+#: awsm-team.php:252, awsm-team.php:296
 msgid "This is where you can create and manage %s."
 msgstr ""
 
-#: awsm-team.php:259
+#: awsm-team.php:270
 msgid "Team"
 msgstr ""
 
-#: awsm-team.php:260, awsm-team.php:274
+#: awsm-team.php:271, awsm-team.php:285
 msgid "Teams"
 msgstr ""
 
-#: awsm-team.php:264
+#: awsm-team.php:275
 msgid "Awsm Team"
 msgstr ""
 
-#: awsm-team.php:265, awsm-team.php:474, awsm-team.php:474
+#: awsm-team.php:276, awsm-team.php:485, awsm-team.php:485
 msgid "Add Team"
 msgstr ""
 
-#: awsm-team.php:345
+#: awsm-team.php:356
 msgid "Please upload square-cropped photos with a minimum dimension of 500px"
 msgstr ""
 
-#: awsm-team.php:362, awsm-team.php:400, templates/table.php:17
+#: awsm-team.php:373, awsm-team.php:411, templates/table.php:17
 msgid "Name"
 msgstr ""
 
-#: awsm-team.php:363
+#: awsm-team.php:374
 msgid "Photo"
 msgstr ""
 
-#: awsm-team.php:364, includes/member-details.php:15, templates/table.php:20
+#: awsm-team.php:375, includes/member-details.php:15, templates/table.php:20
 msgid "Designation"
 msgstr ""
 
-#: awsm-team.php:402
+#: awsm-team.php:413
 msgid "Preset"
 msgstr ""
 
-#: awsm-team.php:403, includes/team-details.php:112
+#: awsm-team.php:414, includes/team-details.php:112
 msgid "Style"
 msgstr ""
 
-#: awsm-team.php:404, awsm-team.php:444
+#: awsm-team.php:415, awsm-team.php:455
 msgid "Shortcode"
 msgstr ""
 
-#: awsm-team.php:444
+#: awsm-team.php:455
 msgid "Copy"
 msgstr ""
 
-#: awsm-team.php:483
+#: awsm-team.php:494
 msgid "Member Details"
 msgstr ""
 
-#: awsm-team.php:484
+#: awsm-team.php:495
 msgid "Team Details"
 msgstr ""
 
-#: awsm-team.php:485
+#: awsm-team.php:496
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: awsm-team.php:829
+#: awsm-team.php:840
 msgid "Thanks for upgrading AWSM Team Pro! The free version ‘AWSM Team’ has now been deactivated."
 msgstr ""
 
