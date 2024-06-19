@@ -179,7 +179,7 @@ if ( ! class_exists( 'Awsm_Team_Lite' ) ) :
 				return '<div class="awsm-team-error">' . esc_html__( 'Invalid team style', 'awsm-team' ) . '</div>';
 			}
 
-			$template = $this->settings['plugin_path'] . 'templates/' . $options['team-style'] . '.php';
+			$template = $this->settings['plugin_path'] . 'templates/' . $team_style . '.php';
 			if ( file_exists( $template ) ) {
 				ob_start();
 				$teamargs = array(
@@ -192,6 +192,8 @@ if ( ! class_exists( 'Awsm_Team_Lite' ) ) :
 				include $template;
 				wp_reset_postdata();
 				return ob_get_clean();
+			} else {
+				return '<div class="awsm-team-error">' . esc_html__( 'Template not found', 'awsm-team' ) . '</div>';
 			}
 		}
 
