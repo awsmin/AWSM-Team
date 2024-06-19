@@ -53,6 +53,9 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 == Changelog ==
 
+= V 1.3.2 - 2024-06-19 =
+* Code improvements and other minor bug fixes.
+
 = V 1.3.1 - 2024-06-11 =
 * Fixed: Vulnerability fixes
 * Other minor bug fixes.
