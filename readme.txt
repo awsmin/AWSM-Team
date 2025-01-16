@@ -54,7 +54,8 @@ The lite version comes with 3 presets and a number of style options. You can cre
 == Changelog ==
 
 = V 1.3.3 - 2025-01-16 =
-* Security improvements and Code improvements.
+* Security fixes and code improvements.
+* Code improvements.
 
 = V 1.3.2 - 2024-06-19 =
 * Code improvements and other minor bug fixes.
@@ -96,4 +97,5 @@ The lite version comes with 3 presets and a number of style options. You can cre
 == Upgrade Notice ==
 
 = 1.3.3 =
-Security improvements and Code improvements
+* Security fixes and code improvements.
+* Code improvements.
