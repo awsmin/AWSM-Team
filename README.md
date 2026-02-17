@@ -48,7 +48,7 @@ The lite version comes with 3 presets and a number of style options. You can cre
 
 ## Changelog
 
-**V 1.3.4 - 2026-02-10**
+**V 1.3.4 - 2026-02-17**
 * Minor bug fixes and code improvements.
 
 **V 1.3.3 - 2025-01-21**
