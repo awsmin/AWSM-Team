@@ -122,10 +122,33 @@ jQuery(document).ready(function($) {
     awsm_update_style();
 
     function awsm_formatmember(team) {
-		var memberlist = wp.template('awsm-member-select'),
-		memberinfo = { src: $(team.element).data('img'), title: team.text, id: team.id, disabled: team.disabled };
-		var markup = memberlist(memberinfo);
-		return markup;
+        if (!team.id) {
+            return team.text;
+        }
+
+        var $container = $('<div class="select2-result-repository clearfix">');
+
+        var img = $(team.element).data('img');
+
+        if (img && /^https?:\/\//i.test(img)) {
+
+            var $img = $('<img>')
+                .addClass('select2-result-repository__avatar')
+                .attr('width', '150')
+                .attr('height', '150')
+                .attr('src', img);
+
+            $container.append(
+                $('<div class="awsm-member-thumb">').append($img)
+            );
+        }
+
+        $container.append(
+            $('<p class="select2-result-repository__title">')
+                .text(team.text)
+        );
+
+        return $container;
     }
 
     function awsm_select() {
@@ -134,7 +157,6 @@ jQuery(document).ready(function($) {
             width: "100%",
 			templateResult: awsm_formatmember,
 			closeOnSelect: false,
-            escapeMarkup: function(markup) {return markup; },
         });
     }
     function awsm_update_style(e){

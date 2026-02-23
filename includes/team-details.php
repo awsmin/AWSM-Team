@@ -49,10 +49,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<ul class="awsm-members-list-selected">
 						<div class="awsm-members-info"><?php esc_html_e( 'No Members Selected', 'awsm-team' ); ?></div>
 						<script type="text/html" id="tmpl-awsm-member-list">
-						   <li data-member-id="{{{data.id}}}" class="">
-							<img width="31" height="31" src="{{{data.src}}}"/>
-							<p>{{{data.title}}}</p><span class="remove-member-to-list" data-member="{{{data.id}}}"><i class="awsm-icon-close"></i></span>
-							<input type="hidden" name="memberlist[]" value='{{{data.id}}}'>
+						   <li data-member-id="{{data.id}}" class="">
+							<img width="31" height="31" src="{{data.src}}"/>
+							<p>{{data.title}}</p><span class="remove-member-to-list" data-member="{{data.id}}"><i class="awsm-icon-close"></i></span>
+							<input type="hidden" name="memberlist[]" value='{{data.id}}'>
 							</li>
 						</script>
 						<?php
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 									?>
 								   <li data-member-id="<?php echo esc_attr( $team->post->ID ); ?>" class="">
 									<img width="31" height="31" src="<?php echo esc_url( $this->team_thumbnail( $team->post->ID, 'thumbnail' ) ); ?>"/>
-									<p><?php the_title(); ?></p><span class="remove-member-to-list" data-member="<?php echo esc_attr( $team->post->ID ); ?>"><i class="awsm-icon-close"></i></span>
+									<p><?php echo esc_html( get_the_title() ); ?></p><span class="remove-member-to-list" data-member="<?php echo esc_attr( $team->post->ID ); ?>"><i class="awsm-icon-close"></i></span>
 									<input type="hidden" name="memberlist[]" value="<?php echo esc_attr( $team->post->ID ); ?>">
 									</li>
 									<?php
@@ -170,9 +170,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="select2-result-repository clearfix">
 		<# if ( data.src ) { #>
 			<div class="awsm-member-thumb">
-				<img class="select2-result-repository__avatar" width="150" height="150" src="{{{data.src}}}" />
+				<img class="select2-result-repository__avatar" width="150" height="150" src="{{data.src}}" />
 			</div>
 		<# } #>
-		<p class="select2-result-repository__title">{{{data.title}}}</p>
+		<p class="select2-result-repository__title">{{data.title}}</p>
 	</div>
 </script>
