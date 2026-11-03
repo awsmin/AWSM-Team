@@ -19,7 +19,8 @@ const gulp = require("gulp"),
 
 /* --- Dependencies: css --- */
 const cleanCSS = require("gulp-clean-css"), // Minify CSS
-	autoprefixer = require("gulp-autoprefixer");
+	postcss = require("gulp-postcss"),
+	autoprefixer = require("autoprefixer");
 
 /* --- Dependencies: js --- */
 const uglify = require("gulp-uglify"), // Minify JavaScript
@@ -80,7 +81,7 @@ let styleTask = () => {
 	let stream = gulp
 		.src(src, srcOptions)
 		.pipe(concat(outputName))
-		.pipe(autoprefixer());
+		.pipe(postcss([autoprefixer()]));
 	let compressedStream = stream.pipe(clone());
 	let unCompressedStream = stream.pipe(clone());
 	compressedStream = compressedStream
